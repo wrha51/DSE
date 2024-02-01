@@ -1,0 +1,327 @@
+
+ZigZag started running.
+Target workload: ResNet50 | Layer(s): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53]
+MEM HIERARCHY  1 / 1
+memory size: {'W': [512, 33554432, 34359738368], 'I': [512, 33554432, 34359738368], 'O': [512, 33554432, 34359738368]}
+memory unroll: unfixed
+memory share: {0: [('W', 2), ('I', 2), ('O', 2)], 1: [('W', 1), ('I', 1), ('O', 1)]}
+21:19:23 ResNet50 L 1 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 3025, 'O': 784}
+spatial_loop 1 {'W': [[[3, 28], [4, 28]], [], [], []], 'I': [[], [[3, 28], [4, 28]], [], []], 'O': [[], [[3, 28], [4, 28]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+21:19:23 ResNet50 L 1 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 28], [4, 28]], [], [], []], 'I': [[], [[3, 28], [4, 28]], [], []], 'O': [[], [[3, 28], [4, 28]], [], []]}
+21:19:23 ResNet50 L 1 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+21:19:23 ResNet50 L 1 , M 1 / 1 , SU 1 / 1  CM  started | Launching 8 threads, each consisting of 1,260 orderings
+21:19:27 ResNet50 L 1 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 3 sec | [min en: (2.598E+08, 0.645, 1.220E+02) max ut: (2.598E+08, 0.766, 1.220E+02)] in all TMs
+21:19:27 ResNet50 L 1,  M 1,  SU 1  Min En: (2.598E+08, 0.645, 1.220E+02) in all SUs and TMs
+21:19:27 ResNet50 L 1,  M 1,  SU 1  Max Ut: (2.598E+08, 0.766, 1.220E+02) in all SUs and TMs
+21:19:27 ResNet50 L 2 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 784, 'O': 784}
+spatial_loop 1 {'W': [[[3, 28], [4, 28]], [], [], []], 'I': [[], [[3, 28], [4, 28]], [], []], 'O': [[], [[3, 28], [4, 28]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+21:19:27 ResNet50 L 2 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 28], [4, 28]], [], [], []], 'I': [[], [[3, 28], [4, 28]], [], []], 'O': [[], [[3, 28], [4, 28]], [], []]}
+21:19:27 ResNet50 L 2 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 1,120
+21:19:27 ResNet50 L 2 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 74 orderings
+21:19:27 ResNet50 L 2 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (2.828E+07, 0.651, 1.220E+02) max ut: (2.828E+07, 0.766, 1.220E+02)] in all TMs
+21:19:28 ResNet50 L 2,  M 1,  SU 1  Min En: (2.828E+07, 0.651, 1.220E+02) in all SUs and TMs
+21:19:28 ResNet50 L 2,  M 1,  SU 1  Max Ut: (2.828E+07, 0.766, 1.220E+02) in all SUs and TMs
+21:19:28 ResNet50 L 3 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 784, 'O': 784}
+spatial_loop 1 {'W': [[[3, 28], [4, 28]], [], [], []], 'I': [[], [[3, 28], [4, 28]], [], []], 'O': [[], [[3, 28], [4, 28]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+21:19:28 ResNet50 L 3 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 28], [4, 28]], [], [], []], 'I': [[], [[3, 28], [4, 28]], [], []], 'O': [[], [[3, 28], [4, 28]], [], []]}
+21:19:28 ResNet50 L 3 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+21:19:28 ResNet50 L 3 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+21:19:35 ResNet50 L 3 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 7 sec | [min en: (2.545E+08, 0.751, 1.220E+02) max ut: (2.545E+08, 0.766, 1.220E+02)] in all TMs
+21:19:35 ResNet50 L 3,  M 1,  SU 1  Min En: (2.545E+08, 0.751, 1.220E+02) in all SUs and TMs
+21:19:35 ResNet50 L 3,  M 1,  SU 1  Max Ut: (2.545E+08, 0.766, 1.220E+02) in all SUs and TMs
+21:19:35 ResNet50 L 4 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 784, 'O': 784}
+spatial_loop 1 {'W': [[[3, 28], [4, 28]], [], [], []], 'I': [[], [[3, 28], [4, 28]], [], []], 'O': [[], [[3, 28], [4, 28]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+21:19:35 ResNet50 L 4 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 28], [4, 28]], [], [], []], 'I': [[], [[3, 28], [4, 28]], [], []], 'O': [[], [[3, 28], [4, 28]], [], []]}
+21:19:36 ResNet50 L 4 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 3,360
+21:19:36 ResNet50 L 4 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 224 orderings
+21:19:36 ResNet50 L 4 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (1.131E+08, 0.651, 1.220E+02) max ut: (1.131E+08, 0.766, 1.220E+02)] in all TMs
+21:19:37 ResNet50 L 4,  M 1,  SU 1  Min En: (1.131E+08, 0.651, 1.220E+02) in all SUs and TMs
+21:19:37 ResNet50 L 4,  M 1,  SU 1  Max Ut: (1.131E+08, 0.766, 1.220E+02) in all SUs and TMs
+21:19:37 ResNet50 L 5 is a duplicate of L 4 . Skipping exploration.
+21:19:37 ResNet50 L 6 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 784, 'O': 784}
+spatial_loop 1 {'W': [[[3, 28], [4, 28]], [], [], []], 'I': [[], [[3, 28], [4, 28]], [], []], 'O': [[], [[3, 28], [4, 28]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+21:19:37 ResNet50 L 6 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 28], [4, 28]], [], [], []], 'I': [[], [[3, 28], [4, 28]], [], []], 'O': [[], [[3, 28], [4, 28]], [], []]}
+21:19:37 ResNet50 L 6 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 3,360
+21:19:37 ResNet50 L 6 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 224 orderings
+21:19:37 ResNet50 L 6 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (1.131E+08, 0.733, 1.220E+02) max ut: (1.131E+08, 0.766, 1.220E+02)] in all TMs
+21:19:38 ResNet50 L 6,  M 1,  SU 1  Min En: (1.131E+08, 0.733, 1.220E+02) in all SUs and TMs
+21:19:38 ResNet50 L 6,  M 1,  SU 1  Max Ut: (1.131E+08, 0.766, 1.220E+02) in all SUs and TMs
+21:19:38 ResNet50 L 7 is a duplicate of L 3 . Skipping exploration.
+21:19:38 ResNet50 L 8 is a duplicate of L 4 . Skipping exploration.
+21:19:38 ResNet50 L 9 is a duplicate of L 6 . Skipping exploration.
+21:19:38 ResNet50 L 10 is a duplicate of L 3 . Skipping exploration.
+21:19:38 ResNet50 L 11 is a duplicate of L 4 . Skipping exploration.
+21:19:38 ResNet50 L 12 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 784, 'O': 784}
+spatial_loop 1 {'W': [[[3, 28], [4, 28]], [], [], []], 'I': [[], [[3, 28], [4, 28]], [], []], 'O': [[], [[3, 28], [4, 28]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+21:19:38 ResNet50 L 12 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 28], [4, 28]], [], [], []], 'I': [[], [[3, 28], [4, 28]], [], []], 'O': [[], [[3, 28], [4, 28]], [], []]}
+21:19:38 ResNet50 L 12 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+21:19:38 ResNet50 L 12 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 672 orderings
+21:19:39 ResNet50 L 12 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 1 sec | [min en: (2.262E+08, 0.766, 1.220E+02) max ut: (2.262E+08, 0.766, 1.220E+02)] in all TMs
+21:19:40 ResNet50 L 12,  M 1,  SU 1  Min En: (2.262E+08, 0.766, 1.220E+02) in all SUs and TMs
+21:19:40 ResNet50 L 12,  M 1,  SU 1  Max Ut: (2.262E+08, 0.766, 1.220E+02) in all SUs and TMs
+21:19:40 ResNet50 L 13 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 3025, 'O': 784}
+spatial_loop 1 {'W': [[[3, 28], [4, 28]], [], [], []], 'I': [[], [[3, 28], [4, 28]], [], []], 'O': [[], [[3, 28], [4, 28]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+21:19:40 ResNet50 L 13 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 28], [4, 28]], [], [], []], 'I': [[], [[3, 28], [4, 28]], [], []], 'O': [[], [[3, 28], [4, 28]], [], []]}
+21:19:40 ResNet50 L 13 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+21:19:40 ResNet50 L 13 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 672 orderings
+21:19:41 ResNet50 L 13 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 1 sec | [min en: (2.545E+08, 0.766, 1.220E+02) max ut: (2.545E+08, 0.766, 1.220E+02)] in all TMs
+21:19:42 ResNet50 L 13,  M 1,  SU 1  Min En: (2.545E+08, 0.766, 1.220E+02) in all SUs and TMs
+21:19:42 ResNet50 L 13,  M 1,  SU 1  Max Ut: (2.545E+08, 0.766, 1.220E+02) in all SUs and TMs
+21:19:42 ResNet50 L 14 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 784, 'O': 784}
+spatial_loop 1 {'W': [[[3, 28], [4, 28]], [], [], []], 'I': [[], [[3, 28], [4, 28]], [], []], 'O': [[], [[3, 28], [4, 28]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+21:19:42 ResNet50 L 14 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 28], [4, 28]], [], [], []], 'I': [[], [[3, 28], [4, 28]], [], []], 'O': [[], [[3, 28], [4, 28]], [], []]}
+21:19:42 ResNet50 L 14 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 1,120
+21:19:42 ResNet50 L 14 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 74 orderings
+21:19:42 ResNet50 L 14 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (1.131E+08, 0.704, 1.220E+02) max ut: (1.131E+08, 0.766, 1.220E+02)] in all TMs
+21:19:42 ResNet50 L 14,  M 1,  SU 1  Min En: (1.131E+08, 0.704, 1.220E+02) in all SUs and TMs
+21:19:42 ResNet50 L 14,  M 1,  SU 1  Max Ut: (1.131E+08, 0.766, 1.220E+02) in all SUs and TMs
+21:19:42 ResNet50 L 15 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 3025, 'O': 784}
+spatial_loop 1 {'W': [[[3, 28], [4, 28]], [], [], []], 'I': [[], [[3, 28], [4, 28]], [], []], 'O': [[], [[3, 28], [4, 28]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+21:19:42 ResNet50 L 15 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 28], [4, 28]], [], [], []], 'I': [[], [[3, 28], [4, 28]], [], []], 'O': [[], [[3, 28], [4, 28]], [], []]}
+21:19:42 ResNet50 L 15 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 280
+21:19:42 ResNet50 L 15 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 18 orderings
+21:19:42 ResNet50 L 15 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (2.262E+08, 0.651, 1.220E+02) max ut: (2.262E+08, 0.766, 1.220E+02)] in all TMs
+21:19:43 ResNet50 L 15,  M 1,  SU 1  Min En: (2.262E+08, 0.651, 1.220E+02) in all SUs and TMs
+21:19:43 ResNet50 L 15,  M 1,  SU 1  Max Ut: (2.262E+08, 0.766, 1.220E+02) in all SUs and TMs
+21:19:43 ResNet50 L 16 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 784, 'O': 784}
+spatial_loop 1 {'W': [[[3, 28], [4, 28]], [], [], []], 'I': [[], [[3, 28], [4, 28]], [], []], 'O': [[], [[3, 28], [4, 28]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+21:19:43 ResNet50 L 16 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 28], [4, 28]], [], [], []], 'I': [[], [[3, 28], [4, 28]], [], []], 'O': [[], [[3, 28], [4, 28]], [], []]}
+21:19:43 ResNet50 L 16 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 1,120
+21:19:43 ResNet50 L 16 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 74 orderings
+21:19:43 ResNet50 L 16 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (1.131E+08, 0.749, 1.220E+02) max ut: (1.131E+08, 0.766, 1.220E+02)] in all TMs
+21:19:43 ResNet50 L 16,  M 1,  SU 1  Min En: (1.131E+08, 0.749, 1.220E+02) in all SUs and TMs
+21:19:43 ResNet50 L 16,  M 1,  SU 1  Max Ut: (1.131E+08, 0.766, 1.220E+02) in all SUs and TMs
+21:19:43 ResNet50 L 17 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 784, 'O': 784}
+spatial_loop 1 {'W': [[[3, 28], [4, 28]], [], [], []], 'I': [[], [[3, 28], [4, 28]], [], []], 'O': [[], [[3, 28], [4, 28]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+21:19:43 ResNet50 L 17 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 28], [4, 28]], [], [], []], 'I': [[], [[3, 28], [4, 28]], [], []], 'O': [[], [[3, 28], [4, 28]], [], []]}
+21:19:43 ResNet50 L 17 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+21:19:43 ResNet50 L 17 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 672 orderings
+21:19:45 ResNet50 L 17 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 1 sec | [min en: (2.545E+08, 0.766, 1.220E+02) max ut: (2.545E+08, 0.766, 1.220E+02)] in all TMs
+21:19:45 ResNet50 L 17,  M 1,  SU 1  Min En: (2.545E+08, 0.766, 1.220E+02) in all SUs and TMs
+21:19:45 ResNet50 L 17,  M 1,  SU 1  Max Ut: (2.545E+08, 0.766, 1.220E+02) in all SUs and TMs
+21:19:45 ResNet50 L 18 is a duplicate of L 14 . Skipping exploration.
+21:19:45 ResNet50 L 19 is a duplicate of L 16 . Skipping exploration.
+21:19:46 ResNet50 L 20 is a duplicate of L 17 . Skipping exploration.
+21:19:46 ResNet50 L 21 is a duplicate of L 14 . Skipping exploration.
+21:19:46 ResNet50 L 22 is a duplicate of L 16 . Skipping exploration.
+21:19:46 ResNet50 L 23 is a duplicate of L 17 . Skipping exploration.
+21:19:46 ResNet50 L 24 is a duplicate of L 14 . Skipping exploration.
+21:19:46 ResNet50 L 25 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 784, 'O': 784}
+spatial_loop 1 {'W': [[[3, 28], [4, 28]], [], [], []], 'I': [[], [[3, 28], [4, 28]], [], []], 'O': [[], [[3, 28], [4, 28]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+21:19:46 ResNet50 L 25 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 28], [4, 28]], [], [], []], 'I': [[], [[3, 28], [4, 28]], [], []], 'O': [[], [[3, 28], [4, 28]], [], []]}
+21:19:46 ResNet50 L 25 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 280
+21:19:46 ResNet50 L 25 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 18 orderings
+21:19:46 ResNet50 L 25 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (2.262E+08, 0.749, 1.220E+02) max ut: (2.262E+08, 0.766, 1.220E+02)] in all TMs
+21:19:46 ResNet50 L 25,  M 1,  SU 1  Min En: (2.262E+08, 0.749, 1.220E+02) in all SUs and TMs
+21:19:46 ResNet50 L 25,  M 1,  SU 1  Max Ut: (2.262E+08, 0.766, 1.220E+02) in all SUs and TMs
+21:19:46 ResNet50 L 26 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 729, 'O': 196}
+spatial_loop 1 {'W': [[[3, 14], [4, 14]], [], [], []], 'I': [[], [[3, 14], [4, 14]], [], []], 'O': [[], [[3, 14], [4, 14]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+21:19:46 ResNet50 L 26 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 14], [4, 14]], [], [], []], 'I': [[], [[3, 14], [4, 14]], [], []], 'O': [[], [[3, 14], [4, 14]], [], []]}
+21:19:46 ResNet50 L 26 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+21:19:46 ResNet50 L 26 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 672 orderings
+21:19:48 ResNet50 L 26 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 1 sec | [min en: (2.772E+08, 0.191, 1.220E+02) max ut: (2.772E+08, 0.191, 1.220E+02)] in all TMs
+21:19:48 ResNet50 L 26,  M 1,  SU 1  Min En: (2.772E+08, 0.191, 1.220E+02) in all SUs and TMs
+21:19:48 ResNet50 L 26,  M 1,  SU 1  Max Ut: (2.772E+08, 0.191, 1.220E+02) in all SUs and TMs
+21:19:48 ResNet50 L 27 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 196, 'O': 196}
+spatial_loop 1 {'W': [[[3, 14], [4, 14]], [], [], []], 'I': [[], [[3, 14], [4, 14]], [], []], 'O': [[], [[3, 14], [4, 14]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+21:19:48 ResNet50 L 27 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 14], [4, 14]], [], [], []], 'I': [[], [[3, 14], [4, 14]], [], []], 'O': [[], [[3, 14], [4, 14]], [], []]}
+21:19:48 ResNet50 L 27 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 280
+21:19:48 ResNet50 L 27 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 18 orderings
+21:19:49 ResNet50 L 27 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (1.232E+08, 0.190, 1.220E+02) max ut: (1.232E+08, 0.191, 1.220E+02)] in all TMs
+21:19:49 ResNet50 L 27,  M 1,  SU 1  Min En: (1.232E+08, 0.190, 1.220E+02) in all SUs and TMs
+21:19:49 ResNet50 L 27,  M 1,  SU 1  Max Ut: (1.232E+08, 0.191, 1.220E+02) in all SUs and TMs
+21:19:49 ResNet50 L 28 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 729, 'O': 196}
+spatial_loop 1 {'W': [[[3, 14], [4, 14]], [], [], []], 'I': [[], [[3, 14], [4, 14]], [], []], 'O': [[], [[3, 14], [4, 14]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+21:19:49 ResNet50 L 28 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 14], [4, 14]], [], [], []], 'I': [[], [[3, 14], [4, 14]], [], []], 'O': [[], [[3, 14], [4, 14]], [], []]}
+21:19:49 ResNet50 L 28 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 1,120
+21:19:49 ResNet50 L 28 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 74 orderings
+21:19:49 ResNet50 L 28 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (2.464E+08, 0.185, 1.220E+02) max ut: (2.464E+08, 0.191, 1.220E+02)] in all TMs
+21:19:50 ResNet50 L 28,  M 1,  SU 1  Min En: (2.464E+08, 0.185, 1.220E+02) in all SUs and TMs
+21:19:50 ResNet50 L 28,  M 1,  SU 1  Max Ut: (2.464E+08, 0.191, 1.220E+02) in all SUs and TMs
+21:19:50 ResNet50 L 29 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 196, 'O': 196}
+spatial_loop 1 {'W': [[[3, 14], [4, 14]], [], [], []], 'I': [[], [[3, 14], [4, 14]], [], []], 'O': [[], [[3, 14], [4, 14]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+21:19:50 ResNet50 L 29 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 14], [4, 14]], [], [], []], 'I': [[], [[3, 14], [4, 14]], [], []], 'O': [[], [[3, 14], [4, 14]], [], []]}
+21:19:50 ResNet50 L 29 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 280
+21:19:50 ResNet50 L 29 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 18 orderings
+21:19:50 ResNet50 L 29 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (1.232E+08, 0.191, 1.220E+02) max ut: (1.232E+08, 0.191, 1.220E+02)] in all TMs
+21:19:50 ResNet50 L 29,  M 1,  SU 1  Min En: (1.232E+08, 0.191, 1.220E+02) in all SUs and TMs
+21:19:50 ResNet50 L 29,  M 1,  SU 1  Max Ut: (1.232E+08, 0.191, 1.220E+02) in all SUs and TMs
+21:19:50 ResNet50 L 30 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 196, 'O': 196}
+spatial_loop 1 {'W': [[[3, 14], [4, 14]], [], [], []], 'I': [[], [[3, 14], [4, 14]], [], []], 'O': [[], [[3, 14], [4, 14]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+21:19:50 ResNet50 L 30 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 14], [4, 14]], [], [], []], 'I': [[], [[3, 14], [4, 14]], [], []], 'O': [[], [[3, 14], [4, 14]], [], []]}
+21:19:50 ResNet50 L 30 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+21:19:50 ResNet50 L 30 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 672 orderings
+21:19:52 ResNet50 L 30 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 1 sec | [min en: (2.771E+08, 0.191, 1.220E+02) max ut: (2.771E+08, 0.191, 1.220E+02)] in all TMs
+21:19:52 ResNet50 L 30,  M 1,  SU 1  Min En: (2.771E+08, 0.191, 1.220E+02) in all SUs and TMs
+21:19:52 ResNet50 L 30,  M 1,  SU 1  Max Ut: (2.771E+08, 0.191, 1.220E+02) in all SUs and TMs
+21:19:52 ResNet50 L 31 is a duplicate of L 27 . Skipping exploration.
+21:19:52 ResNet50 L 32 is a duplicate of L 29 . Skipping exploration.
+21:19:52 ResNet50 L 33 is a duplicate of L 30 . Skipping exploration.
+21:19:52 ResNet50 L 34 is a duplicate of L 27 . Skipping exploration.
+21:19:52 ResNet50 L 35 is a duplicate of L 29 . Skipping exploration.
+21:19:52 ResNet50 L 36 is a duplicate of L 30 . Skipping exploration.
+21:19:52 ResNet50 L 37 is a duplicate of L 27 . Skipping exploration.
+21:19:53 ResNet50 L 38 is a duplicate of L 29 . Skipping exploration.
+21:19:53 ResNet50 L 39 is a duplicate of L 30 . Skipping exploration.
+21:19:53 ResNet50 L 40 is a duplicate of L 27 . Skipping exploration.
+21:19:53 ResNet50 L 41 is a duplicate of L 29 . Skipping exploration.
+21:19:53 ResNet50 L 42 is a duplicate of L 30 . Skipping exploration.
+21:19:53 ResNet50 L 43 is a duplicate of L 27 . Skipping exploration.
+21:19:53 ResNet50 L 44 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 196, 'O': 196}
+spatial_loop 1 {'W': [[[3, 14], [4, 14]], [], [], []], 'I': [[], [[3, 14], [4, 14]], [], []], 'O': [[], [[3, 14], [4, 14]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+21:19:53 ResNet50 L 44 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 14], [4, 14]], [], [], []], 'I': [[], [[3, 14], [4, 14]], [], []], 'O': [[], [[3, 14], [4, 14]], [], []]}
+21:19:53 ResNet50 L 44 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 1,120
+21:19:53 ResNet50 L 44 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 74 orderings
+21:19:53 ResNet50 L 44 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (2.464E+08, 0.191, 1.220E+02) max ut: (2.464E+08, 0.191, 1.220E+02)] in all TMs
+21:19:53 ResNet50 L 44,  M 1,  SU 1  Min En: (2.464E+08, 0.191, 1.220E+02) in all SUs and TMs
+21:19:53 ResNet50 L 44,  M 1,  SU 1  Max Ut: (2.464E+08, 0.191, 1.220E+02) in all SUs and TMs
+21:19:53 ResNet50 L 45 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 169, 'O': 49}
+spatial_loop 1 {'W': [[[3, 7], [4, 7]], [], [], []], 'I': [[], [[3, 7], [4, 7]], [], []], 'O': [[], [[3, 7], [4, 7]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+21:19:53 ResNet50 L 45 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 7], [4, 7]], [], [], []], 'I': [[], [[3, 7], [4, 7]], [], []], 'O': [[], [[3, 7], [4, 7]], [], []]}
+21:19:53 ResNet50 L 45 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+21:19:53 ResNet50 L 45 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+21:19:58 ResNet50 L 45 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 5 sec | [min en: (3.678E+08, 0.048, 1.220E+02) max ut: (3.678E+08, 0.048, 1.220E+02)] in all TMs
+21:19:59 ResNet50 L 45,  M 1,  SU 1  Min En: (3.678E+08, 0.048, 1.220E+02) in all SUs and TMs
+21:19:59 ResNet50 L 45,  M 1,  SU 1  Max Ut: (3.678E+08, 0.048, 1.220E+02) in all SUs and TMs
+21:19:59 ResNet50 L 46 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 49, 'O': 49}
+spatial_loop 1 {'W': [[[3, 7], [4, 7]], [], [], []], 'I': [[], [[3, 7], [4, 7]], [], []], 'O': [[], [[3, 7], [4, 7]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+21:19:59 ResNet50 L 46 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 7], [4, 7]], [], [], []], 'I': [[], [[3, 7], [4, 7]], [], []], 'O': [[], [[3, 7], [4, 7]], [], []]}
+21:19:59 ResNet50 L 46 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 3,360
+21:19:59 ResNet50 L 46 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 224 orderings
+21:19:59 ResNet50 L 46 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (1.635E+08, 0.048, 1.220E+02) max ut: (1.635E+08, 0.048, 1.220E+02)] in all TMs
+21:19:59 ResNet50 L 46,  M 1,  SU 1  Min En: (1.635E+08, 0.048, 1.220E+02) in all SUs and TMs
+21:19:59 ResNet50 L 46,  M 1,  SU 1  Max Ut: (1.635E+08, 0.048, 1.220E+02) in all SUs and TMs
+21:20:00 ResNet50 L 47 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 169, 'O': 49}
+spatial_loop 1 {'W': [[[3, 7], [4, 7]], [], [], []], 'I': [[], [[3, 7], [4, 7]], [], []], 'O': [[], [[3, 7], [4, 7]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+21:20:00 ResNet50 L 47 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 7], [4, 7]], [], [], []], 'I': [[], [[3, 7], [4, 7]], [], []], 'O': [[], [[3, 7], [4, 7]], [], []]}
+21:20:00 ResNet50 L 47 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 3,360
+21:20:00 ResNet50 L 47 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 224 orderings
+21:20:00 ResNet50 L 47 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (3.269E+08, 0.048, 1.220E+02) max ut: (3.269E+08, 0.048, 1.220E+02)] in all TMs
+21:20:00 ResNet50 L 47,  M 1,  SU 1  Min En: (3.269E+08, 0.048, 1.220E+02) in all SUs and TMs
+21:20:00 ResNet50 L 47,  M 1,  SU 1  Max Ut: (3.269E+08, 0.048, 1.220E+02) in all SUs and TMs
+21:20:00 ResNet50 L 48 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 49, 'O': 49}
+spatial_loop 1 {'W': [[[3, 7], [4, 7]], [], [], []], 'I': [[], [[3, 7], [4, 7]], [], []], 'O': [[], [[3, 7], [4, 7]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+21:20:00 ResNet50 L 48 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 7], [4, 7]], [], [], []], 'I': [[], [[3, 7], [4, 7]], [], []], 'O': [[], [[3, 7], [4, 7]], [], []]}
+21:20:00 ResNet50 L 48 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 3,360
+21:20:00 ResNet50 L 48 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 224 orderings
+21:20:01 ResNet50 L 48 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (1.635E+08, 0.048, 1.220E+02) max ut: (1.635E+08, 0.048, 1.220E+02)] in all TMs
+21:20:01 ResNet50 L 48,  M 1,  SU 1  Min En: (1.635E+08, 0.048, 1.220E+02) in all SUs and TMs
+21:20:01 ResNet50 L 48,  M 1,  SU 1  Max Ut: (1.635E+08, 0.048, 1.220E+02) in all SUs and TMs
+21:20:01 ResNet50 L 49 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 169, 'O': 49}
+spatial_loop 1 {'W': [[[3, 7], [4, 7]], [], [], []], 'I': [[], [[3, 7], [4, 7]], [], []], 'O': [[], [[3, 7], [4, 7]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+21:20:01 ResNet50 L 49 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 7], [4, 7]], [], [], []], 'I': [[], [[3, 7], [4, 7]], [], []], 'O': [[], [[3, 7], [4, 7]], [], []]}
+21:20:01 ResNet50 L 49 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+21:20:01 ResNet50 L 49 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+21:20:07 ResNet50 L 49 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 6 sec | [min en: (3.701E+09, 0.048, 1.220E+02) max ut: (3.701E+09, 0.048, 1.220E+02)] in all TMs
+21:20:08 ResNet50 L 49,  M 1,  SU 1  Min En: (3.701E+09, 0.048, 1.220E+02) in all SUs and TMs
+21:20:08 ResNet50 L 49,  M 1,  SU 1  Max Ut: (3.701E+09, 0.048, 1.220E+02) in all SUs and TMs
+21:20:08 ResNet50 L 50 is a duplicate of L 46 . Skipping exploration.
+21:20:08 ResNet50 L 51 is a duplicate of L 48 . Skipping exploration.
+21:20:08 ResNet50 L 52 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 49, 'O': 49}
+spatial_loop 1 {'W': [[[3, 7], [4, 7]], [], [], []], 'I': [[], [[3, 7], [4, 7]], [], []], 'O': [[], [[3, 7], [4, 7]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+21:20:08 ResNet50 L 52 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 7], [4, 7]], [], [], []], 'I': [[], [[3, 7], [4, 7]], [], []], 'O': [[], [[3, 7], [4, 7]], [], []]}
+21:20:08 ResNet50 L 52 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+21:20:08 ResNet50 L 52 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+21:20:13 ResNet50 L 52 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 5 sec | [min en: (3.678E+08, 0.048, 1.220E+02) max ut: (3.678E+08, 0.048, 1.220E+02)] in all TMs
+21:20:13 ResNet50 L 52,  M 1,  SU 1  Min En: (3.678E+08, 0.048, 1.220E+02) in all SUs and TMs
+21:20:13 ResNet50 L 52,  M 1,  SU 1  Max Ut: (3.678E+08, 0.048, 1.220E+02) in all SUs and TMs
+21:20:13 ResNet50 L 53 is a duplicate of L 46 . Skipping exploration.
+ZigZag finished running. Total elapsed time: 69 seconds.
+Results are saved to ./_results/Edge_shi_ResNet50_hint.
+

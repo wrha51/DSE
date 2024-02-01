@@ -1,0 +1,104 @@
+
+ZigZag started running.
+Target workload: DepthNet | Layer(s): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
+MEM HIERARCHY  1 / 1
+memory size: {'W': [512, 33554432, 34359738368], 'I': [512, 33554432, 34359738368], 'O': [512, 33554432, 34359738368]}
+memory unroll: unfixed
+memory share: {0: [('W', 2), ('I', 2), ('O', 2)], 1: [('W', 1), ('I', 1), ('O', 1)]}
+21:25:58 DepthNet L 1 , M 1 / 1  SUG started
+Error in distinguish_XY. Skipping current SU
+21:25:58 DepthNet L 1 , M 1 / 1  SUG finished | Valid SU found: 0
+Layer 1 : no valid spatial unrolling found
+21:25:58 DepthNet L 2 , M 1 / 1  SUG started
+Error in distinguish_XY. Skipping current SU
+21:25:58 DepthNet L 2 , M 1 / 1  SUG finished | Valid SU found: 0
+Layer 2 : no valid spatial unrolling found
+21:25:58 DepthNet L 3 , M 1 / 1  SUG started
+Error in distinguish_XY. Skipping current SU
+21:25:58 DepthNet L 3 , M 1 / 1  SUG finished | Valid SU found: 0
+Layer 3 : no valid spatial unrolling found
+21:25:58 DepthNet L 4 , M 1 / 1  SUG started
+Error in distinguish_XY. Skipping current SU
+21:25:59 DepthNet L 4 , M 1 / 1  SUG finished | Valid SU found: 0
+Layer 4 : no valid spatial unrolling found
+21:25:59 DepthNet L 5 , M 1 / 1  SUG started
+Error in distinguish_XY. Skipping current SU
+21:25:59 DepthNet L 5 , M 1 / 1  SUG finished | Valid SU found: 0
+Layer 5 : no valid spatial unrolling found
+21:25:59 DepthNet L 6 , M 1 / 1  SUG started
+Error in distinguish_XY. Skipping current SU
+21:25:59 DepthNet L 6 , M 1 / 1  SUG finished | Valid SU found: 0
+Layer 6 : no valid spatial unrolling found
+21:25:59 DepthNet L 7 is a duplicate of L 6 . Skipping exploration.
+21:25:59 DepthNet L 8 , M 1 / 1  SUG started
+Error in distinguish_XY. Skipping current SU
+21:25:59 DepthNet L 8 , M 1 / 1  SUG finished | Valid SU found: 0
+Layer 8 : no valid spatial unrolling found
+21:25:59 DepthNet L 9 , M 1 / 1  SUG started
+Error in distinguish_XY. Skipping current SU
+21:25:59 DepthNet L 9 , M 1 / 1  SUG finished | Valid SU found: 0
+Layer 9 : no valid spatial unrolling found
+21:25:59 DepthNet L 10 is a duplicate of L 9 . Skipping exploration.
+21:25:59 DepthNet L 11 , M 1 / 1  SUG started
+Error in distinguish_XY. Skipping current SU
+21:25:59 DepthNet L 11 , M 1 / 1  SUG finished | Valid SU found: 0
+Layer 11 : no valid spatial unrolling found
+21:25:59 DepthNet L 12 is a duplicate of L 11 . Skipping exploration.
+21:25:59 DepthNet L 13 is a duplicate of L 11 . Skipping exploration.
+21:25:59 DepthNet L 14 , M 1 / 1  SUG started
+Error in distinguish_XY. Skipping current SU
+21:25:59 DepthNet L 14 , M 1 / 1  SUG finished | Valid SU found: 0
+Layer 14 : no valid spatial unrolling found
+21:26:00 DepthNet L 15 , M 1 / 1  SUG started
+Error in distinguish_XY. Skipping current SU
+21:26:00 DepthNet L 15 , M 1 / 1  SUG finished | Valid SU found: 0
+Layer 15 : no valid spatial unrolling found
+21:26:00 DepthNet L 16 , M 1 / 1  SUG started
+Error in distinguish_XY. Skipping current SU
+21:26:00 DepthNet L 16 , M 1 / 1  SUG finished | Valid SU found: 0
+Layer 16 : no valid spatial unrolling found
+21:26:00 DepthNet L 17 , M 1 / 1  SUG started
+Error in distinguish_XY. Skipping current SU
+21:26:00 DepthNet L 17 , M 1 / 1  SUG finished | Valid SU found: 0
+Layer 17 : no valid spatial unrolling found
+21:26:00 DepthNet L 18 , M 1 / 1  SUG started
+Error in distinguish_XY. Skipping current SU
+21:26:00 DepthNet L 18 , M 1 / 1  SUG finished | Valid SU found: 0
+Layer 18 : no valid spatial unrolling found
+21:26:00 DepthNet L 19 is a duplicate of L 5 . Skipping exploration.
+21:26:00 DepthNet L 20 , M 1 / 1  SUG started
+Error in distinguish_XY. Skipping current SU
+21:26:00 DepthNet L 20 , M 1 / 1  SUG finished | Valid SU found: 0
+Layer 20 : no valid spatial unrolling found
+21:26:00 DepthNet L 21 is a duplicate of L 8 . Skipping exploration.
+21:26:00 DepthNet L 22 , M 1 / 1  SUG started
+Error in distinguish_XY. Skipping current SU
+21:26:00 DepthNet L 22 , M 1 / 1  SUG finished | Valid SU found: 0
+Layer 22 : no valid spatial unrolling found
+21:26:00 DepthNet L 23 , M 1 / 1  SUG started
+Error in distinguish_XY. Skipping current SU
+21:26:00 DepthNet L 23 , M 1 / 1  SUG finished | Valid SU found: 0
+Layer 23 : no valid spatial unrolling found
+21:26:00 DepthNet L 24 , M 1 / 1  SUG started
+Error in distinguish_XY. Skipping current SU
+21:26:00 DepthNet L 24 , M 1 / 1  SUG finished | Valid SU found: 0
+Layer 24 : no valid spatial unrolling found
+21:26:00 DepthNet L 25 , M 1 / 1  SUG started
+Error in distinguish_XY. Skipping current SU
+21:26:01 DepthNet L 25 , M 1 / 1  SUG finished | Valid SU found: 0
+Layer 25 : no valid spatial unrolling found
+21:26:01 DepthNet L 26 , M 1 / 1  SUG started
+Error in distinguish_XY. Skipping current SU
+21:26:01 DepthNet L 26 , M 1 / 1  SUG finished | Valid SU found: 0
+Layer 26 : no valid spatial unrolling found
+21:26:01 DepthNet L 27 , M 1 / 1  SUG started
+Error in distinguish_XY. Skipping current SU
+21:26:02 DepthNet L 27 , M 1 / 1  SUG finished | Valid SU found: 0
+Layer 27 : no valid spatial unrolling found
+21:26:02 DepthNet L 28 , M 1 / 1  SUG started
+Error in distinguish_XY. Skipping current SU
+21:26:02 DepthNet L 28 , M 1 / 1  SUG finished | Valid SU found: 0
+Layer 28 : no valid spatial unrolling found
+ZigZag finished running. Total elapsed time: 5 seconds.
+Results are saved to ./_results/Edge_[[(C, 32)], [(C, 2), (FX, 2), (FY, 2), (OX, 2), (OY, 2)]]_DepthNet.
+

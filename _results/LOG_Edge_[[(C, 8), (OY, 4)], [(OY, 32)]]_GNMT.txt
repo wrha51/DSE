@@ -1,0 +1,41 @@
+
+ZigZag started running.
+Target workload: GNMT | Layer(s): [1, 2, 3, 4, 5, 6, 7, 8, 9]
+MEM HIERARCHY  1 / 1
+memory size: {'W': [512, 33554432, 34359738368], 'I': [512, 33554432, 34359738368], 'O': [512, 33554432, 34359738368]}
+memory unroll: unfixed
+memory share: {0: [('W', 2), ('I', 2), ('O', 2)], 1: [('W', 1), ('I', 1), ('O', 1)]}
+19:57:40 GNMT L 1 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 8, 'I': 1024, 'O': 128}
+spatial_loop 1 {'W': [[[4, 4], [4, 32]], [[5, 8]], [], []], 'I': [[], [[5, 8], [4, 4], [4, 32]], [], []], 'O': [[[5, 8]], [[4, 4], [4, 32]], [], []]}
+flooring 1 {'W': [[[4], [4]], [[5], []], [], []], 'I': [[], [[5, 4], [4]], [], []], 'O': [[[5], []], [[4], [4]], [], []]}
+
+19:57:40 GNMT L 1 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[4, 4], [4, 32]], [[5, 8]], [], []], 'I': [[], [[5, 8], [4, 4], [4, 32]], [], []], 'O': [[[5, 8]], [[4, 4], [4, 32]], [], []]}
+19:57:40 GNMT L 1 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 3,360
+19:57:40 GNMT L 1 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 224 orderings
+19:57:40 GNMT L 1 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (2.347E+09, 0.985, 1.210E+02) max ut: (2.347E+09, 1.000, 1.210E+02)] in all TMs
+19:57:40 GNMT L 1,  M 1,  SU 1  Min En: (2.347E+09, 0.985, 1.210E+02) in all SUs and TMs
+19:57:40 GNMT L 1,  M 1,  SU 1  Max Ut: (2.347E+09, 1.000, 1.210E+02) in all SUs and TMs
+19:57:41 GNMT L 2 is a duplicate of L 1 . Skipping exploration.
+19:57:41 GNMT L 3 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 8, 'I': 1024, 'O': 128}
+spatial_loop 1 {'W': [[[4, 4], [4, 32]], [[5, 8]], [], []], 'I': [[], [[5, 8], [4, 4], [4, 32]], [], []], 'O': [[[5, 8]], [[4, 4], [4, 32]], [], []]}
+flooring 1 {'W': [[[4], [4]], [[5], []], [], []], 'I': [[], [[5, 4], [4]], [], []], 'O': [[[5], []], [[4], [4]], [], []]}
+
+19:57:41 GNMT L 3 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[4, 4], [4, 32]], [[5, 8]], [], []], 'I': [[], [[5, 8], [4, 4], [4, 32]], [], []], 'O': [[[5, 8]], [[4, 4], [4, 32]], [], []]}
+19:57:41 GNMT L 3 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 3,360
+19:57:41 GNMT L 3 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 224 orderings
+19:57:41 GNMT L 3 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (8.802E+09, 1.000, 1.210E+02) max ut: (8.802E+09, 1.000, 1.210E+02)] in all TMs
+19:57:42 GNMT L 3,  M 1,  SU 1  Min En: (8.802E+09, 1.000, 1.210E+02) in all SUs and TMs
+19:57:42 GNMT L 3,  M 1,  SU 1  Max Ut: (8.802E+09, 1.000, 1.210E+02) in all SUs and TMs
+19:57:42 GNMT L 4 is a duplicate of L 1 . Skipping exploration.
+19:57:42 GNMT L 5 is a duplicate of L 1 . Skipping exploration.
+19:57:42 GNMT L 6 is a duplicate of L 3 . Skipping exploration.
+19:57:42 GNMT L 7 is a duplicate of L 3 . Skipping exploration.
+19:57:42 GNMT L 8 is a duplicate of L 3 . Skipping exploration.
+19:57:42 GNMT L 9 is a duplicate of L 3 . Skipping exploration.
+ZigZag finished running. Total elapsed time: 5 seconds.
+Results are saved to ./_results/Edge_[[(C, 8), (OY, 4)], [(OY, 32)]]_GNMT.
+

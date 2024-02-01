@@ -1,0 +1,271 @@
+Grouped convolution detected for MobileNetv1 Layer 2. Terminal prints will show total energy of all groups combined.
+Grouped convolution detected for MobileNetv1 Layer 4. Terminal prints will show total energy of all groups combined.
+Grouped convolution detected for MobileNetv1 Layer 6. Terminal prints will show total energy of all groups combined.
+Grouped convolution detected for MobileNetv1 Layer 8. Terminal prints will show total energy of all groups combined.
+Grouped convolution detected for MobileNetv1 Layer 10. Terminal prints will show total energy of all groups combined.
+Grouped convolution detected for MobileNetv1 Layer 12. Terminal prints will show total energy of all groups combined.
+Grouped convolution detected for MobileNetv1 Layer 14. Terminal prints will show total energy of all groups combined.
+Grouped convolution detected for MobileNetv1 Layer 16. Terminal prints will show total energy of all groups combined.
+Grouped convolution detected for MobileNetv1 Layer 18. Terminal prints will show total energy of all groups combined.
+Grouped convolution detected for MobileNetv1 Layer 20. Terminal prints will show total energy of all groups combined.
+Grouped convolution detected for MobileNetv1 Layer 22. Terminal prints will show total energy of all groups combined.
+Grouped convolution detected for MobileNetv1 Layer 24. Terminal prints will show total energy of all groups combined.
+Grouped convolution detected for MobileNetv1 Layer 26. Terminal prints will show total energy of all groups combined.
+
+ZigZag started running.
+Target workload: MobileNetv1 | Layer(s): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
+MEM HIERARCHY  1 / 1
+memory size: {'W': [512, 33554432, 34359738368], 'I': [512, 33554432, 34359738368], 'O': [512, 33554432, 34359738368]}
+memory unroll: unfixed
+memory share: {0: [('W', 2), ('I', 2), ('O', 2)], 1: [('W', 1), ('I', 1), ('O', 1)]}
+21:59:09 MobileNetv1 L 1 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 96, 'I': 3, 'O': 32}
+spatial_loop 1 {'W': [[], [[5, 3], [6, 32]], [], []], 'I': [[[6, 32]], [[5, 3]], [], []], 'O': [[[5, 3]], [[6, 32]], [], []]}
+flooring 1 {'W': [[], [[5], [6]], [], []], 'I': [[[], [6]], [[5], []], [], []], 'O': [[[5], []], [[], [6]], [], []]}
+
+21:59:09 MobileNetv1 L 1 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[], [[5, 3], [6, 32]], [], []], 'I': [[[6, 32]], [[5, 3]], [], []], 'O': [[[5, 3]], [[6, 32]], [], []]}
+21:59:09 MobileNetv1 L 1 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+21:59:09 MobileNetv1 L 1 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 672 orderings
+21:59:11 MobileNetv1 L 1 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 1 sec | [min en: (2.895E+07, 0.094, 1.210E+02) max ut: (2.895E+07, 0.094, 1.210E+02)] in all TMs
+21:59:12 MobileNetv1 L 1,  M 1,  SU 1  Min En: (2.895E+07, 0.094, 1.210E+02) in all SUs and TMs
+21:59:12 MobileNetv1 L 1,  M 1,  SU 1  Max Ut: (2.895E+07, 0.094, 1.210E+02) in all SUs and TMs
+21:59:12 MobileNetv1 L 2 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1, 'O': 1}
+spatial_loop 1 {'W': [[], [[5, 1], [6, 1]], [], []], 'I': [[[6, 1]], [[5, 1]], [], []], 'O': [[[5, 1]], [[6, 1]], [], []]}
+flooring 1 {'W': [[], [[5], [6]], [], []], 'I': [[[], [6]], [[5], []], [], []], 'O': [[[5], []], [[], [6]], [], []]}
+
+21:59:12 MobileNetv1 L 2 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[], [[5, 1], [6, 1]], [], []], 'I': [[[6, 1]], [[5, 1]], [], []], 'O': [[[5, 1]], [[6, 1]], [], []]}
+21:59:12 MobileNetv1 L 2 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+21:59:12 MobileNetv1 L 2 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 672 orderings
+21:59:14 MobileNetv1 L 2 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 2 sec | [min en: (1.927E+08, 0.001, 1.200E+02) max ut: (1.927E+08, 0.001, 1.200E+02)] in all TMs
+21:59:15 MobileNetv1 L 2,  M 1,  SU 1  Min En: (1.927E+08, 0.001, 1.200E+02) in all SUs and TMs
+21:59:15 MobileNetv1 L 2,  M 1,  SU 1  Max Ut: (1.927E+08, 0.001, 1.200E+02) in all SUs and TMs
+21:59:15 MobileNetv1 L 3 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1024, 'I': 32, 'O': 32}
+spatial_loop 1 {'W': [[], [[5, 32], [6, 32]], [], []], 'I': [[[6, 32]], [[5, 32]], [], []], 'O': [[[5, 32]], [[6, 32]], [], []]}
+flooring 1 {'W': [[], [[5], [6]], [], []], 'I': [[[], [6]], [[5], []], [], []], 'O': [[[5], []], [[], [6]], [], []]}
+
+21:59:15 MobileNetv1 L 3 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[], [[5, 32], [6, 32]], [], []], 'I': [[[6, 32]], [[5, 32]], [], []], 'O': [[[5, 32]], [[6, 32]], [], []]}
+21:59:15 MobileNetv1 L 3 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+21:59:15 MobileNetv1 L 3 , M 1 / 1 , SU 1 / 1  CM  started | Launching 8 threads, each consisting of 1,260 orderings
+21:59:17 MobileNetv1 L 3 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 2 sec | [min en: (5.617E+07, 1.000, 1.210E+02) max ut: (5.617E+07, 1.000, 1.210E+02)] in all TMs
+21:59:17 MobileNetv1 L 3,  M 1,  SU 1  Min En: (5.617E+07, 1.000, 1.210E+02) in all SUs and TMs
+21:59:17 MobileNetv1 L 3,  M 1,  SU 1  Max Ut: (5.617E+07, 1.000, 1.210E+02) in all SUs and TMs
+21:59:17 MobileNetv1 L 4 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1, 'O': 1}
+spatial_loop 1 {'W': [[], [[5, 1], [6, 1]], [], []], 'I': [[[6, 1]], [[5, 1]], [], []], 'O': [[[5, 1]], [[6, 1]], [], []]}
+flooring 1 {'W': [[], [[5], [6]], [], []], 'I': [[[], [6]], [[5], []], [], []], 'O': [[[5], []], [[], [6]], [], []]}
+
+21:59:17 MobileNetv1 L 4 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[], [[5, 1], [6, 1]], [], []], 'I': [[[6, 1]], [[5, 1]], [], []], 'O': [[[5, 1]], [[6, 1]], [], []]}
+21:59:17 MobileNetv1 L 4 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+21:59:17 MobileNetv1 L 4 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+21:59:24 MobileNetv1 L 4 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 6 sec | [min en: (9.635E+07, 0.001, 1.200E+02) max ut: (9.635E+07, 0.001, 1.200E+02)] in all TMs
+21:59:24 MobileNetv1 L 4,  M 1,  SU 1  Min En: (9.635E+07, 0.001, 1.200E+02) in all SUs and TMs
+21:59:24 MobileNetv1 L 4,  M 1,  SU 1  Max Ut: (9.635E+07, 0.001, 1.200E+02) in all SUs and TMs
+21:59:24 MobileNetv1 L 5 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1024, 'I': 32, 'O': 32}
+spatial_loop 1 {'W': [[], [[5, 32], [6, 32]], [], []], 'I': [[[6, 32]], [[5, 32]], [], []], 'O': [[[5, 32]], [[6, 32]], [], []]}
+flooring 1 {'W': [[], [[5], [6]], [], []], 'I': [[[], [6]], [[5], []], [], []], 'O': [[[5], []], [[], [6]], [], []]}
+
+21:59:24 MobileNetv1 L 5 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[], [[5, 32], [6, 32]], [], []], 'I': [[[6, 32]], [[5, 32]], [], []], 'O': [[[5, 32]], [[6, 32]], [], []]}
+21:59:24 MobileNetv1 L 5 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+21:59:24 MobileNetv1 L 5 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 1,344 orderings
+21:59:27 MobileNetv1 L 5 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 3 sec | [min en: (5.617E+07, 1.000, 1.210E+02) max ut: (5.617E+07, 1.000, 1.210E+02)] in all TMs
+21:59:28 MobileNetv1 L 5,  M 1,  SU 1  Min En: (5.617E+07, 1.000, 1.210E+02) in all SUs and TMs
+21:59:28 MobileNetv1 L 5,  M 1,  SU 1  Max Ut: (5.617E+07, 1.000, 1.210E+02) in all SUs and TMs
+21:59:28 MobileNetv1 L 6 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1, 'O': 1}
+spatial_loop 1 {'W': [[], [[5, 1], [6, 1]], [], []], 'I': [[[6, 1]], [[5, 1]], [], []], 'O': [[[5, 1]], [[6, 1]], [], []]}
+flooring 1 {'W': [[], [[5], [6]], [], []], 'I': [[[], [6]], [[5], []], [], []], 'O': [[[5], []], [[], [6]], [], []]}
+
+21:59:28 MobileNetv1 L 6 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[], [[5, 1], [6, 1]], [], []], 'I': [[[6, 1]], [[5, 1]], [], []], 'O': [[[5, 1]], [[6, 1]], [], []]}
+21:59:28 MobileNetv1 L 6 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+21:59:28 MobileNetv1 L 6 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+21:59:34 MobileNetv1 L 6 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 6 sec | [min en: (1.927E+08, 0.001, 1.200E+02) max ut: (1.927E+08, 0.001, 1.200E+02)] in all TMs
+21:59:34 MobileNetv1 L 6,  M 1,  SU 1  Min En: (1.927E+08, 0.001, 1.200E+02) in all SUs and TMs
+21:59:34 MobileNetv1 L 6,  M 1,  SU 1  Max Ut: (1.927E+08, 0.001, 1.200E+02) in all SUs and TMs
+21:59:34 MobileNetv1 L 7 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1024, 'I': 32, 'O': 32}
+spatial_loop 1 {'W': [[], [[5, 32], [6, 32]], [], []], 'I': [[[6, 32]], [[5, 32]], [], []], 'O': [[[5, 32]], [[6, 32]], [], []]}
+flooring 1 {'W': [[], [[5], [6]], [], []], 'I': [[[], [6]], [[5], []], [], []], 'O': [[[5], []], [[], [6]], [], []]}
+
+21:59:34 MobileNetv1 L 7 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[], [[5, 32], [6, 32]], [], []], 'I': [[[6, 32]], [[5, 32]], [], []], 'O': [[[5, 32]], [[6, 32]], [], []]}
+21:59:34 MobileNetv1 L 7 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+21:59:34 MobileNetv1 L 7 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 672 orderings
+21:59:37 MobileNetv1 L 7 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 2 sec | [min en: (1.123E+08, 1.000, 1.210E+02) max ut: (1.123E+08, 1.000, 1.210E+02)] in all TMs
+21:59:37 MobileNetv1 L 7,  M 1,  SU 1  Min En: (1.123E+08, 1.000, 1.210E+02) in all SUs and TMs
+21:59:37 MobileNetv1 L 7,  M 1,  SU 1  Max Ut: (1.123E+08, 1.000, 1.210E+02) in all SUs and TMs
+21:59:37 MobileNetv1 L 8 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1, 'O': 1}
+spatial_loop 1 {'W': [[], [[5, 1], [6, 1]], [], []], 'I': [[[6, 1]], [[5, 1]], [], []], 'O': [[[5, 1]], [[6, 1]], [], []]}
+flooring 1 {'W': [[], [[5], [6]], [], []], 'I': [[[], [6]], [[5], []], [], []], 'O': [[[5], []], [[], [6]], [], []]}
+
+21:59:37 MobileNetv1 L 8 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[], [[5, 1], [6, 1]], [], []], 'I': [[[6, 1]], [[5, 1]], [], []], 'O': [[[5, 1]], [[6, 1]], [], []]}
+21:59:37 MobileNetv1 L 8 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+21:59:37 MobileNetv1 L 8 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 672 orderings
+21:59:40 MobileNetv1 L 8 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 2 sec | [min en: (4.818E+07, 0.001, 1.200E+02) max ut: (4.818E+07, 0.001, 1.200E+02)] in all TMs
+21:59:40 MobileNetv1 L 8,  M 1,  SU 1  Min En: (4.818E+07, 0.001, 1.200E+02) in all SUs and TMs
+21:59:40 MobileNetv1 L 8,  M 1,  SU 1  Max Ut: (4.818E+07, 0.001, 1.200E+02) in all SUs and TMs
+21:59:40 MobileNetv1 L 9 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1024, 'I': 32, 'O': 32}
+spatial_loop 1 {'W': [[], [[5, 32], [6, 32]], [], []], 'I': [[[6, 32]], [[5, 32]], [], []], 'O': [[[5, 32]], [[6, 32]], [], []]}
+flooring 1 {'W': [[], [[5], [6]], [], []], 'I': [[[], [6]], [[5], []], [], []], 'O': [[[5], []], [[], [6]], [], []]}
+
+21:59:40 MobileNetv1 L 9 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[], [[5, 32], [6, 32]], [], []], 'I': [[[6, 32]], [[5, 32]], [], []], 'O': [[[5, 32]], [[6, 32]], [], []]}
+21:59:40 MobileNetv1 L 9 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+21:59:40 MobileNetv1 L 9 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 1,344 orderings
+21:59:44 MobileNetv1 L 9 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 4 sec | [min en: (5.616E+07, 1.000, 1.210E+02) max ut: (5.616E+07, 1.000, 1.210E+02)] in all TMs
+21:59:45 MobileNetv1 L 9,  M 1,  SU 1  Min En: (5.616E+07, 1.000, 1.210E+02) in all SUs and TMs
+21:59:45 MobileNetv1 L 9,  M 1,  SU 1  Max Ut: (5.616E+07, 1.000, 1.210E+02) in all SUs and TMs
+21:59:45 MobileNetv1 L 10 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1, 'O': 1}
+spatial_loop 1 {'W': [[], [[5, 1], [6, 1]], [], []], 'I': [[[6, 1]], [[5, 1]], [], []], 'O': [[[5, 1]], [[6, 1]], [], []]}
+flooring 1 {'W': [[], [[5], [6]], [], []], 'I': [[[], [6]], [[5], []], [], []], 'O': [[[5], []], [[], [6]], [], []]}
+
+21:59:45 MobileNetv1 L 10 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[], [[5, 1], [6, 1]], [], []], 'I': [[[6, 1]], [[5, 1]], [], []], 'O': [[[5, 1]], [[6, 1]], [], []]}
+21:59:45 MobileNetv1 L 10 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+21:59:45 MobileNetv1 L 10 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 672 orderings
+21:59:48 MobileNetv1 L 10 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 2 sec | [min en: (9.635E+07, 0.001, 1.200E+02) max ut: (9.635E+07, 0.001, 1.200E+02)] in all TMs
+21:59:48 MobileNetv1 L 10,  M 1,  SU 1  Min En: (9.635E+07, 0.001, 1.200E+02) in all SUs and TMs
+21:59:48 MobileNetv1 L 10,  M 1,  SU 1  Max Ut: (9.635E+07, 0.001, 1.200E+02) in all SUs and TMs
+21:59:48 MobileNetv1 L 11 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1024, 'I': 32, 'O': 32}
+spatial_loop 1 {'W': [[], [[5, 32], [6, 32]], [], []], 'I': [[[6, 32]], [[5, 32]], [], []], 'O': [[[5, 32]], [[6, 32]], [], []]}
+flooring 1 {'W': [[], [[5], [6]], [], []], 'I': [[[], [6]], [[5], []], [], []], 'O': [[[5], []], [[], [6]], [], []]}
+
+21:59:48 MobileNetv1 L 11 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[], [[5, 32], [6, 32]], [], []], 'I': [[[6, 32]], [[5, 32]], [], []], 'O': [[[5, 32]], [[6, 32]], [], []]}
+21:59:48 MobileNetv1 L 11 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+21:59:48 MobileNetv1 L 11 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+21:59:56 MobileNetv1 L 11 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 8 sec | [min en: (1.123E+08, 1.000, 1.210E+02) max ut: (1.123E+08, 1.000, 1.210E+02)] in all TMs
+21:59:57 MobileNetv1 L 11,  M 1,  SU 1  Min En: (1.123E+08, 1.000, 1.210E+02) in all SUs and TMs
+21:59:57 MobileNetv1 L 11,  M 1,  SU 1  Max Ut: (1.123E+08, 1.000, 1.210E+02) in all SUs and TMs
+21:59:57 MobileNetv1 L 12 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1, 'O': 1}
+spatial_loop 1 {'W': [[], [[5, 1], [6, 1]], [], []], 'I': [[[6, 1]], [[5, 1]], [], []], 'O': [[[5, 1]], [[6, 1]], [], []]}
+flooring 1 {'W': [[], [[5], [6]], [], []], 'I': [[[], [6]], [[5], []], [], []], 'O': [[[5], []], [[], [6]], [], []]}
+
+21:59:57 MobileNetv1 L 12 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[], [[5, 1], [6, 1]], [], []], 'I': [[[6, 1]], [[5, 1]], [], []], 'O': [[[5, 1]], [[6, 1]], [], []]}
+21:59:57 MobileNetv1 L 12 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 720
+21:59:57 MobileNetv1 L 12 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 48 orderings
+21:59:57 MobileNetv1 L 12 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (2.409E+07, 0.001, 1.200E+02) max ut: (2.409E+07, 0.001, 1.200E+02)] in all TMs
+21:59:57 MobileNetv1 L 12,  M 1,  SU 1  Min En: (2.409E+07, 0.001, 1.200E+02) in all SUs and TMs
+21:59:57 MobileNetv1 L 12,  M 1,  SU 1  Max Ut: (2.409E+07, 0.001, 1.200E+02) in all SUs and TMs
+21:59:57 MobileNetv1 L 13 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1024, 'I': 32, 'O': 32}
+spatial_loop 1 {'W': [[], [[5, 32], [6, 32]], [], []], 'I': [[[6, 32]], [[5, 32]], [], []], 'O': [[[5, 32]], [[6, 32]], [], []]}
+flooring 1 {'W': [[], [[5], [6]], [], []], 'I': [[[], [6]], [[5], []], [], []], 'O': [[[5], []], [[], [6]], [], []]}
+
+21:59:57 MobileNetv1 L 13 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[], [[5, 32], [6, 32]], [], []], 'I': [[[6, 32]], [[5, 32]], [], []], 'O': [[[5, 32]], [[6, 32]], [], []]}
+21:59:57 MobileNetv1 L 13 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+21:59:57 MobileNetv1 L 13 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 1,344 orderings
+22:00:01 MobileNetv1 L 13 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 4 sec | [min en: (5.616E+07, 1.000, 1.210E+02) max ut: (5.616E+07, 1.000, 1.210E+02)] in all TMs
+22:00:02 MobileNetv1 L 13,  M 1,  SU 1  Min En: (5.616E+07, 1.000, 1.210E+02) in all SUs and TMs
+22:00:02 MobileNetv1 L 13,  M 1,  SU 1  Max Ut: (5.616E+07, 1.000, 1.210E+02) in all SUs and TMs
+22:00:02 MobileNetv1 L 14 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1, 'O': 1}
+spatial_loop 1 {'W': [[], [[5, 1], [6, 1]], [], []], 'I': [[[6, 1]], [[5, 1]], [], []], 'O': [[[5, 1]], [[6, 1]], [], []]}
+flooring 1 {'W': [[], [[5], [6]], [], []], 'I': [[[], [6]], [[5], []], [], []], 'O': [[[5], []], [[], [6]], [], []]}
+
+22:00:02 MobileNetv1 L 14 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[], [[5, 1], [6, 1]], [], []], 'I': [[[6, 1]], [[5, 1]], [], []], 'O': [[[5, 1]], [[6, 1]], [], []]}
+22:00:02 MobileNetv1 L 14 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 720
+22:00:02 MobileNetv1 L 14 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 48 orderings
+22:00:02 MobileNetv1 L 14 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (4.817E+07, 0.001, 1.200E+02) max ut: (4.817E+07, 0.001, 1.200E+02)] in all TMs
+22:00:02 MobileNetv1 L 14,  M 1,  SU 1  Min En: (4.817E+07, 0.001, 1.200E+02) in all SUs and TMs
+22:00:02 MobileNetv1 L 14,  M 1,  SU 1  Max Ut: (4.817E+07, 0.001, 1.200E+02) in all SUs and TMs
+22:00:02 MobileNetv1 L 15 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1024, 'I': 32, 'O': 32}
+spatial_loop 1 {'W': [[], [[5, 32], [6, 32]], [], []], 'I': [[[6, 32]], [[5, 32]], [], []], 'O': [[[5, 32]], [[6, 32]], [], []]}
+flooring 1 {'W': [[], [[5], [6]], [], []], 'I': [[[], [6]], [[5], []], [], []], 'O': [[[5], []], [[], [6]], [], []]}
+
+22:00:02 MobileNetv1 L 15 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[], [[5, 32], [6, 32]], [], []], 'I': [[[6, 32]], [[5, 32]], [], []], 'O': [[[5, 32]], [[6, 32]], [], []]}
+22:00:02 MobileNetv1 L 15 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+22:00:02 MobileNetv1 L 15 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 672 orderings
+22:00:04 MobileNetv1 L 15 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 1 sec | [min en: (1.123E+08, 1.000, 1.210E+02) max ut: (1.123E+08, 1.000, 1.210E+02)] in all TMs
+22:00:05 MobileNetv1 L 15,  M 1,  SU 1  Min En: (1.123E+08, 1.000, 1.210E+02) in all SUs and TMs
+22:00:05 MobileNetv1 L 15,  M 1,  SU 1  Max Ut: (1.123E+08, 1.000, 1.210E+02) in all SUs and TMs
+22:00:05 MobileNetv1 L 16 is a duplicate of L 14 . Skipping exploration.
+22:00:05 MobileNetv1 L 17 is a duplicate of L 15 . Skipping exploration.
+22:00:05 MobileNetv1 L 18 is a duplicate of L 14 . Skipping exploration.
+22:00:05 MobileNetv1 L 19 is a duplicate of L 15 . Skipping exploration.
+22:00:05 MobileNetv1 L 20 is a duplicate of L 14 . Skipping exploration.
+22:00:05 MobileNetv1 L 21 is a duplicate of L 15 . Skipping exploration.
+22:00:05 MobileNetv1 L 22 is a duplicate of L 14 . Skipping exploration.
+22:00:05 MobileNetv1 L 23 is a duplicate of L 15 . Skipping exploration.
+22:00:05 MobileNetv1 L 24 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1, 'O': 1}
+spatial_loop 1 {'W': [[], [[5, 1], [6, 1]], [], []], 'I': [[[6, 1]], [[5, 1]], [], []], 'O': [[[5, 1]], [[6, 1]], [], []]}
+flooring 1 {'W': [[], [[5], [6]], [], []], 'I': [[[], [6]], [[5], []], [], []], 'O': [[[5], []], [[], [6]], [], []]}
+
+22:00:05 MobileNetv1 L 24 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[], [[5, 1], [6, 1]], [], []], 'I': [[[6, 1]], [[5, 1]], [], []], 'O': [[[5, 1]], [[6, 1]], [], []]}
+22:00:05 MobileNetv1 L 24 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 24
+22:00:05 MobileNetv1 L 24 , M 1 / 1 , SU 1 / 1  CM  started | Launching 4 threads, each consisting of 6 orderings
+22:00:05 MobileNetv1 L 24 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (1.204E+07, 0.001, 1.200E+02) max ut: (1.204E+07, 0.001, 1.200E+02)] in all TMs
+22:00:05 MobileNetv1 L 24,  M 1,  SU 1  Min En: (1.204E+07, 0.001, 1.200E+02) in all SUs and TMs
+22:00:05 MobileNetv1 L 24,  M 1,  SU 1  Max Ut: (1.204E+07, 0.001, 1.200E+02) in all SUs and TMs
+22:00:05 MobileNetv1 L 25 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1024, 'I': 32, 'O': 32}
+spatial_loop 1 {'W': [[], [[5, 32], [6, 32]], [], []], 'I': [[[6, 32]], [[5, 32]], [], []], 'O': [[[5, 32]], [[6, 32]], [], []]}
+flooring 1 {'W': [[], [[5], [6]], [], []], 'I': [[[], [6]], [[5], []], [], []], 'O': [[[5], []], [[], [6]], [], []]}
+
+22:00:05 MobileNetv1 L 25 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[], [[5, 32], [6, 32]], [], []], 'I': [[[6, 32]], [[5, 32]], [], []], 'O': [[[5, 32]], [[6, 32]], [], []]}
+22:00:05 MobileNetv1 L 25 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+22:00:05 MobileNetv1 L 25 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 672 orderings
+22:00:07 MobileNetv1 L 25 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 1 sec | [min en: (5.617E+07, 1.000, 1.210E+02) max ut: (5.617E+07, 1.000, 1.210E+02)] in all TMs
+22:00:07 MobileNetv1 L 25,  M 1,  SU 1  Min En: (5.617E+07, 1.000, 1.210E+02) in all SUs and TMs
+22:00:07 MobileNetv1 L 25,  M 1,  SU 1  Max Ut: (5.617E+07, 1.000, 1.210E+02) in all SUs and TMs
+22:00:07 MobileNetv1 L 26 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1, 'O': 1}
+spatial_loop 1 {'W': [[], [[5, 1], [6, 1]], [], []], 'I': [[[6, 1]], [[5, 1]], [], []], 'O': [[[5, 1]], [[6, 1]], [], []]}
+flooring 1 {'W': [[], [[5], [6]], [], []], 'I': [[[], [6]], [[5], []], [], []], 'O': [[[5], []], [[], [6]], [], []]}
+
+22:00:07 MobileNetv1 L 26 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[], [[5, 1], [6, 1]], [], []], 'I': [[[6, 1]], [[5, 1]], [], []], 'O': [[[5, 1]], [[6, 1]], [], []]}
+22:00:07 MobileNetv1 L 26 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 24
+22:00:07 MobileNetv1 L 26 , M 1 / 1 , SU 1 / 1  CM  started | Launching 4 threads, each consisting of 6 orderings
+22:00:07 MobileNetv1 L 26 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (2.409E+07, 0.001, 1.200E+02) max ut: (2.409E+07, 0.001, 1.200E+02)] in all TMs
+22:00:07 MobileNetv1 L 26,  M 1,  SU 1  Min En: (2.409E+07, 0.001, 1.200E+02) in all SUs and TMs
+22:00:07 MobileNetv1 L 26,  M 1,  SU 1  Max Ut: (2.409E+07, 0.001, 1.200E+02) in all SUs and TMs
+22:00:07 MobileNetv1 L 27 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1024, 'I': 32, 'O': 32}
+spatial_loop 1 {'W': [[], [[5, 32], [6, 32]], [], []], 'I': [[[6, 32]], [[5, 32]], [], []], 'O': [[[5, 32]], [[6, 32]], [], []]}
+flooring 1 {'W': [[], [[5], [6]], [], []], 'I': [[[], [6]], [[5], []], [], []], 'O': [[[5], []], [[], [6]], [], []]}
+
+22:00:07 MobileNetv1 L 27 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[], [[5, 32], [6, 32]], [], []], 'I': [[[6, 32]], [[5, 32]], [], []], 'O': [[[5, 32]], [[6, 32]], [], []]}
+22:00:07 MobileNetv1 L 27 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+22:00:07 MobileNetv1 L 27 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 672 orderings
+22:00:09 MobileNetv1 L 27 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 1 sec | [min en: (1.123E+08, 1.000, 1.210E+02) max ut: (1.123E+08, 1.000, 1.210E+02)] in all TMs
+22:00:10 MobileNetv1 L 27,  M 1,  SU 1  Min En: (1.123E+08, 1.000, 1.210E+02) in all SUs and TMs
+22:00:10 MobileNetv1 L 27,  M 1,  SU 1  Max Ut: (1.123E+08, 1.000, 1.210E+02) in all SUs and TMs
+22:00:10 MobileNetv1 L 28 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 416, 'I': 32, 'O': 13}
+spatial_loop 1 {'W': [[], [[5, 32], [6, 13]], [], []], 'I': [[[6, 13]], [[5, 32]], [], []], 'O': [[[5, 32]], [[6, 13]], [], []]}
+flooring 1 {'W': [[], [[5], [6]], [], []], 'I': [[[], [6]], [[5], []], [], []], 'O': [[[5], []], [[], [6]], [], []]}
+
+22:00:10 MobileNetv1 L 28 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[], [[5, 32], [6, 13]], [], []], 'I': [[[6, 13]], [[5, 32]], [], []], 'O': [[[5, 32]], [[6, 13]], [], []]}
+22:00:10 MobileNetv1 L 28 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 42
+22:00:10 MobileNetv1 L 28 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 2 orderings
+22:00:10 MobileNetv1 L 28 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (2.324E+06, 0.063, 1.210E+02) max ut: (2.324E+06, 0.063, 1.210E+02)] in all TMs
+22:00:10 MobileNetv1 L 28,  M 1,  SU 1  Min En: (2.324E+06, 0.063, 1.210E+02) in all SUs and TMs
+22:00:10 MobileNetv1 L 28,  M 1,  SU 1  Max Ut: (2.324E+06, 0.063, 1.210E+02) in all SUs and TMs
+ZigZag finished running. Total elapsed time: 72 seconds.
+Results are saved to ./_results/Edge_nvdla_MobileNetv1_hint.
+

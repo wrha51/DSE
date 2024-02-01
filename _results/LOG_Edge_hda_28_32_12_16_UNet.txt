@@ -1,0 +1,470 @@
+
+ZigZag started running.
+Target workload: UNet | Layer(s): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
+MEM HIERARCHY  1 / 1
+memory size: {'W': [512, 25165824, 34359738368], 'I': [512, 25165824, 34359738368], 'O': [512, 25165824, 34359738368]}
+memory unroll: unfixed
+memory share: {0: [('W', 1), ('I', 1), ('O', 1)], 1: [('W', 2), ('I', 2), ('O', 2)]}
+01:18:56 UNet L 1 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+01:18:56 UNet L 1 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+01:18:56 UNet L 1 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:18:56 UNet L 1 , M 1 / 1 , SU 1 / 2  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+01:19:03 UNet L 1 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 7 sec | [min en: (4.097E+08, 0.324, 1.150E+02) max ut: (4.097E+08, 0.463, 1.150E+02)] in all TMs
+01:19:03 UNet L 1 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:19:03 UNet L 1 , M 1 / 1 , SU 2 / 2  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+01:19:11 UNet L 1 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 7 sec | [min en: (4.097E+08, 0.324, 1.150E+02) max ut: (4.097E+08, 0.463, 1.150E+02)] in all TMs
+01:19:11 UNet L 1,  M 1,  SU 1  Min En: (4.097E+08, 0.324, 1.150E+02) in all SUs and TMs
+01:19:11 UNet L 1,  M 1,  SU 1  Max Ut: (4.097E+08, 0.463, 1.150E+02) in all SUs and TMs
+01:19:11 UNet L 2 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+01:19:11 UNet L 2 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+01:19:11 UNet L 2 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:19:11 UNet L 2 , M 1 / 1 , SU 1 / 2  CM  started | Launching 8 threads, each consisting of 5,040 orderings
+01:19:24 UNet L 2 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 13 sec | [min en: (2.603E+10, 0.924, 1.150E+02) max ut: (2.603E+10, 0.924, 1.150E+02)] in all TMs
+01:19:24 UNet L 2 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:19:24 UNet L 2 , M 1 / 1 , SU 2 / 2  CM  started | Launching 8 threads, each consisting of 5,040 orderings
+01:19:37 UNet L 2 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 12 sec | [min en: (2.603E+10, 0.924, 1.150E+02) max ut: (2.603E+10, 0.924, 1.150E+02)] in all TMs
+01:19:37 UNet L 2,  M 1,  SU 1  Min En: (2.603E+10, 0.924, 1.150E+02) in all SUs and TMs
+01:19:37 UNet L 2,  M 1,  SU 1  Max Ut: (2.603E+10, 0.924, 1.150E+02) in all SUs and TMs
+01:19:37 UNet L 3 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+01:19:37 UNet L 3 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+01:19:37 UNet L 3 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+01:19:37 UNet L 3 , M 1 / 1 , SU 1 / 2  CM  started | Launching 8 threads, each consisting of 2,520 orderings
+01:19:43 UNet L 3 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 6 sec | [min en: (1.285E+10, 0.788, 1.150E+02) max ut: (1.285E+10, 0.897, 1.150E+02)] in all TMs
+01:19:44 UNet L 3 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+01:19:44 UNet L 3 , M 1 / 1 , SU 2 / 2  CM  started | Launching 8 threads, each consisting of 2,520 orderings
+01:19:50 UNet L 3 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 6 sec | [min en: (1.285E+10, 0.788, 1.150E+02) max ut: (1.285E+10, 0.897, 1.150E+02)] in all TMs
+01:19:50 UNet L 3,  M 1,  SU 1  Min En: (1.285E+10, 0.788, 1.150E+02) in all SUs and TMs
+01:19:50 UNet L 3,  M 1,  SU 1  Max Ut: (1.285E+10, 0.897, 1.150E+02) in all SUs and TMs
+01:19:50 UNet L 4 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+01:19:50 UNet L 4 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+01:19:50 UNet L 4 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+01:19:50 UNet L 4 , M 1 / 1 , SU 1 / 2  CM  started | Launching 8 threads, each consisting of 2,520 orderings
+01:19:56 UNet L 4 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 6 sec | [min en: (2.529E+10, 0.170, 1.150E+02) max ut: (2.531E+10, 0.461, 1.150E+02)] in all TMs
+01:19:57 UNet L 4 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+01:19:57 UNet L 4 , M 1 / 1 , SU 2 / 2  CM  started | Launching 8 threads, each consisting of 2,520 orderings
+01:20:03 UNet L 4 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 6 sec | [min en: (2.529E+10, 0.170, 1.150E+02) max ut: (2.531E+10, 0.461, 1.150E+02)] in all TMs
+01:20:03 UNet L 4,  M 1,  SU 1  Min En: (2.529E+10, 0.170, 1.150E+02) in all SUs and TMs
+01:20:03 UNet L 4,  M 1,  SU 1  Max Ut: (2.531E+10, 0.461, 1.150E+02) in all SUs and TMs
+01:20:03 UNet L 5 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+01:20:03 UNet L 5 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+01:20:03 UNet L 5 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+01:20:03 UNet L 5 , M 1 / 1 , SU 1 / 2  CM  started | Launching 15 threads, each consisting of 1,344 orderings
+01:20:07 UNet L 5 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 3 sec | [min en: (1.233E+10, 0.658, 1.150E+02) max ut: (1.233E+10, 0.850, 1.150E+02)] in all TMs
+01:20:07 UNet L 5 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+01:20:07 UNet L 5 , M 1 / 1 , SU 2 / 2  CM  started | Launching 15 threads, each consisting of 1,344 orderings
+01:20:11 UNet L 5 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 3 sec | [min en: (1.233E+10, 0.658, 1.150E+02) max ut: (1.233E+10, 0.850, 1.150E+02)] in all TMs
+01:20:11 UNet L 5,  M 1,  SU 1  Min En: (1.233E+10, 0.658, 1.150E+02) in all SUs and TMs
+01:20:11 UNet L 5,  M 1,  SU 1  Max Ut: (1.233E+10, 0.850, 1.150E+02) in all SUs and TMs
+01:20:11 UNet L 6 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+01:20:11 UNet L 6 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+01:20:11 UNet L 6 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+01:20:11 UNet L 6 , M 1 / 1 , SU 1 / 2  CM  started | Launching 15 threads, each consisting of 672 orderings
+01:20:13 UNet L 6 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 2 sec | [min en: (2.396E+10, 0.639, 1.150E+02) max ut: (2.397E+10, 0.817, 1.150E+02)] in all TMs
+01:20:14 UNet L 6 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+01:20:14 UNet L 6 , M 1 / 1 , SU 2 / 2  CM  started | Launching 15 threads, each consisting of 672 orderings
+01:20:16 UNet L 6 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 2 sec | [min en: (2.396E+10, 0.639, 1.150E+02) max ut: (2.397E+10, 0.817, 1.150E+02)] in all TMs
+01:20:16 UNet L 6,  M 1,  SU 1  Min En: (2.396E+10, 0.639, 1.150E+02) in all SUs and TMs
+01:20:16 UNet L 6,  M 1,  SU 1  Max Ut: (2.397E+10, 0.817, 1.150E+02) in all SUs and TMs
+01:20:16 UNet L 7 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+01:20:16 UNet L 7 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+01:20:16 UNet L 7 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+01:20:16 UNet L 7 , M 1 / 1 , SU 1 / 2  CM  started | Launching 15 threads, each consisting of 1,344 orderings
+01:20:20 UNet L 7 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 3 sec | [min en: (1.145E+10, 0.540, 1.160E+02) max ut: (1.145E+10, 0.540, 1.160E+02)] in all TMs
+01:20:20 UNet L 7 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+01:20:20 UNet L 7 , M 1 / 1 , SU 2 / 2  CM  started | Launching 15 threads, each consisting of 1,344 orderings
+01:20:24 UNet L 7 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 3 sec | [min en: (1.145E+10, 0.540, 1.160E+02) max ut: (1.145E+10, 0.540, 1.160E+02)] in all TMs
+01:20:24 UNet L 7,  M 1,  SU 1  Min En: (1.145E+10, 0.540, 1.160E+02) in all SUs and TMs
+01:20:24 UNet L 7,  M 1,  SU 1  Max Ut: (1.145E+10, 0.540, 1.160E+02) in all SUs and TMs
+01:20:24 UNet L 8 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+01:20:24 UNet L 8 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+01:20:24 UNet L 8 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:20:24 UNet L 8 , M 1 / 1 , SU 1 / 2  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+01:20:31 UNet L 8 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 7 sec | [min en: (2.128E+10, 0.762, 1.150E+02) max ut: (2.128E+10, 0.762, 1.150E+02)] in all TMs
+01:20:31 UNet L 8 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:20:31 UNet L 8 , M 1 / 1 , SU 2 / 2  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+01:20:39 UNet L 8 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 7 sec | [min en: (2.128E+10, 0.762, 1.150E+02) max ut: (2.128E+10, 0.762, 1.150E+02)] in all TMs
+01:20:39 UNet L 8,  M 1,  SU 1  Min En: (2.128E+10, 0.762, 1.150E+02) in all SUs and TMs
+01:20:39 UNet L 8,  M 1,  SU 1  Max Ut: (2.128E+10, 0.762, 1.150E+02) in all SUs and TMs
+01:20:39 UNet L 9 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+01:20:39 UNet L 9 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+01:20:39 UNet L 9 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:20:39 UNet L 9 , M 1 / 1 , SU 1 / 2  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+01:20:45 UNet L 9 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 6 sec | [min en: (9.494E+09, 0.500, 1.160E+02) max ut: (9.494E+09, 0.502, 1.160E+02)] in all TMs
+01:20:45 UNet L 9 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:20:45 UNet L 9 , M 1 / 1 , SU 2 / 2  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+01:20:52 UNet L 9 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 6 sec | [min en: (9.494E+09, 0.500, 1.160E+02) max ut: (9.494E+09, 0.502, 1.160E+02)] in all TMs
+01:20:52 UNet L 9,  M 1,  SU 1  Min En: (9.494E+09, 0.500, 1.160E+02) in all SUs and TMs
+01:20:52 UNet L 9,  M 1,  SU 1  Max Ut: (9.494E+09, 0.502, 1.160E+02) in all SUs and TMs
+01:20:52 UNet L 10 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+01:20:52 UNet L 10 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+01:20:52 UNet L 10 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+01:20:52 UNet L 10 , M 1 / 1 , SU 1 / 2  CM  started | Launching 15 threads, each consisting of 672 orderings
+01:20:54 UNet L 10 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 1 sec | [min en: (1.623E+10, 0.873, 1.150E+02) max ut: (1.623E+10, 0.875, 1.150E+02)] in all TMs
+01:20:54 UNet L 10 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+01:20:54 UNet L 10 , M 1 / 1 , SU 2 / 2  CM  started | Launching 15 threads, each consisting of 672 orderings
+01:20:56 UNet L 10 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 1 sec | [min en: (1.623E+10, 0.873, 1.150E+02) max ut: (1.623E+10, 0.875, 1.150E+02)] in all TMs
+01:20:56 UNet L 10,  M 1,  SU 1  Min En: (1.623E+10, 0.873, 1.150E+02) in all SUs and TMs
+01:20:56 UNet L 10,  M 1,  SU 1  Max Ut: (1.623E+10, 0.875, 1.150E+02) in all SUs and TMs
+01:20:56 UNet L 11 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+01:20:56 UNet L 11 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+01:20:56 UNet L 11 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:20:56 UNet L 11 , M 1 / 1 , SU 1 / 2  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+01:21:03 UNet L 11 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 7 sec | [min en: (2.885E+10, 0.871, 1.150E+02) max ut: (2.885E+10, 0.875, 1.150E+02)] in all TMs
+01:21:04 UNet L 11 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:21:04 UNet L 11 , M 1 / 1 , SU 2 / 2  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+01:21:11 UNet L 11 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 7 sec | [min en: (2.885E+10, 0.871, 1.150E+02) max ut: (2.885E+10, 0.875, 1.150E+02)] in all TMs
+01:21:11 UNet L 11,  M 1,  SU 1  Min En: (2.885E+10, 0.871, 1.150E+02) in all SUs and TMs
+01:21:11 UNet L 11,  M 1,  SU 1  Max Ut: (2.885E+10, 0.875, 1.150E+02) in all SUs and TMs
+01:21:11 UNet L 12 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+01:21:11 UNet L 12 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+01:21:11 UNet L 12 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:21:11 UNet L 12 , M 1 / 1 , SU 1 / 2  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+01:21:18 UNet L 12 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 7 sec | [min en: (3.024E+10, 0.812, 1.150E+02) max ut: (3.024E+10, 0.814, 1.150E+02)] in all TMs
+01:21:19 UNet L 12 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:21:19 UNet L 12 , M 1 / 1 , SU 2 / 2  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+01:21:26 UNet L 12 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 7 sec | [min en: (3.024E+10, 0.812, 1.150E+02) max ut: (3.024E+10, 0.814, 1.150E+02)] in all TMs
+01:21:26 UNet L 12,  M 1,  SU 1  Min En: (3.024E+10, 0.812, 1.150E+02) in all SUs and TMs
+01:21:26 UNet L 12,  M 1,  SU 1  Max Ut: (3.024E+10, 0.814, 1.150E+02) in all SUs and TMs
+01:21:26 UNet L 13 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+01:21:26 UNet L 13 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+01:21:26 UNet L 13 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:21:26 UNet L 13 , M 1 / 1 , SU 1 / 2  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+01:21:33 UNet L 13 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 7 sec | [min en: (1.405E+10, 0.752, 1.150E+02) max ut: (1.405E+10, 0.754, 1.150E+02)] in all TMs
+01:21:34 UNet L 13 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:21:34 UNet L 13 , M 1 / 1 , SU 2 / 2  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+01:21:41 UNet L 13 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 7 sec | [min en: (1.405E+10, 0.752, 1.150E+02) max ut: (1.405E+10, 0.754, 1.150E+02)] in all TMs
+01:21:41 UNet L 13,  M 1,  SU 1  Min En: (1.405E+10, 0.752, 1.150E+02) in all SUs and TMs
+01:21:41 UNet L 13,  M 1,  SU 1  Max Ut: (1.405E+10, 0.754, 1.150E+02) in all SUs and TMs
+01:21:41 UNet L 14 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+01:21:41 UNet L 14 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+01:21:41 UNet L 14 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+01:21:41 UNet L 14 , M 1 / 1 , SU 1 / 2  CM  started | Launching 8 threads, each consisting of 1,260 orderings
+01:21:44 UNet L 14 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 3 sec | [min en: (2.498E+10, 0.072, 1.150E+02) max ut: (2.499E+10, 0.162, 1.150E+02)] in all TMs
+01:21:44 UNet L 14 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+01:21:44 UNet L 14 , M 1 / 1 , SU 2 / 2  CM  started | Launching 8 threads, each consisting of 1,260 orderings
+01:21:48 UNet L 14 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 3 sec | [min en: (2.498E+10, 0.072, 1.150E+02) max ut: (2.499E+10, 0.162, 1.150E+02)] in all TMs
+01:21:48 UNet L 14,  M 1,  SU 1  Min En: (2.498E+10, 0.072, 1.150E+02) in all SUs and TMs
+01:21:48 UNet L 14,  M 1,  SU 1  Max Ut: (2.499E+10, 0.162, 1.150E+02) in all SUs and TMs
+01:21:48 UNet L 15 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+01:21:48 UNet L 15 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+01:21:48 UNet L 15 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+01:21:48 UNet L 15 , M 1 / 1 , SU 1 / 2  CM  started | Launching 8 threads, each consisting of 1,260 orderings
+01:21:51 UNet L 15 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 3 sec | [min en: (2.707E+10, 0.087, 1.150E+02) max ut: (2.709E+10, 0.345, 1.150E+02)] in all TMs
+01:21:52 UNet L 15 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+01:21:52 UNet L 15 , M 1 / 1 , SU 2 / 2  CM  started | Launching 8 threads, each consisting of 1,260 orderings
+01:21:55 UNet L 15 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 3 sec | [min en: (2.707E+10, 0.087, 1.150E+02) max ut: (2.709E+10, 0.345, 1.150E+02)] in all TMs
+01:21:55 UNet L 15,  M 1,  SU 1  Min En: (2.707E+10, 0.087, 1.150E+02) in all SUs and TMs
+01:21:55 UNet L 15,  M 1,  SU 1  Max Ut: (2.709E+10, 0.345, 1.150E+02) in all SUs and TMs
+01:21:55 UNet L 16 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+01:21:55 UNet L 16 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+01:21:55 UNet L 16 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+01:21:55 UNet L 16 , M 1 / 1 , SU 1 / 2  CM  started | Launching 8 threads, each consisting of 1,260 orderings
+01:21:58 UNet L 16 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 3 sec | [min en: (1.302E+10, 0.112, 1.150E+02) max ut: (1.303E+10, 0.332, 1.150E+02)] in all TMs
+01:21:58 UNet L 16 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+01:21:58 UNet L 16 , M 1 / 1 , SU 2 / 2  CM  started | Launching 8 threads, each consisting of 1,260 orderings
+01:22:02 UNet L 16 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 3 sec | [min en: (1.302E+10, 0.112, 1.150E+02) max ut: (1.303E+10, 0.332, 1.150E+02)] in all TMs
+01:22:02 UNet L 16,  M 1,  SU 1  Min En: (1.302E+10, 0.112, 1.150E+02) in all SUs and TMs
+01:22:02 UNet L 16,  M 1,  SU 1  Max Ut: (1.303E+10, 0.332, 1.150E+02) in all SUs and TMs
+01:22:02 UNet L 17 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+01:22:02 UNet L 17 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+01:22:02 UNet L 17 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+01:22:02 UNet L 17 , M 1 / 1 , SU 1 / 2  CM  started | Launching 8 threads, each consisting of 2,520 orderings
+01:22:08 UNet L 17 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 6 sec | [min en: (2.306E+10, 0.746, 1.150E+02) max ut: (2.306E+10, 0.797, 1.150E+02)] in all TMs
+01:22:09 UNet L 17 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+01:22:09 UNet L 17 , M 1 / 1 , SU 2 / 2  CM  started | Launching 8 threads, each consisting of 2,520 orderings
+01:22:15 UNet L 17 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 6 sec | [min en: (2.306E+10, 0.746, 1.150E+02) max ut: (2.306E+10, 0.797, 1.150E+02)] in all TMs
+01:22:15 UNet L 17,  M 1,  SU 1  Min En: (2.306E+10, 0.746, 1.150E+02) in all SUs and TMs
+01:22:15 UNet L 17,  M 1,  SU 2  Max Ut: (2.306E+10, 0.797, 1.150E+02) in all SUs and TMs
+01:22:15 UNet L 18 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+01:22:15 UNet L 18 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+01:22:15 UNet L 18 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+01:22:15 UNet L 18 , M 1 / 1 , SU 1 / 2  CM  started | Launching 8 threads, each consisting of 2,520 orderings
+01:22:22 UNet L 18 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 6 sec | [min en: (2.544E+10, 0.717, 1.150E+02) max ut: (2.544E+10, 0.717, 1.150E+02)] in all TMs
+01:22:22 UNet L 18 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+01:22:22 UNet L 18 , M 1 / 1 , SU 2 / 2  CM  started | Launching 8 threads, each consisting of 2,520 orderings
+01:22:28 UNet L 18 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 6 sec | [min en: (2.544E+10, 0.717, 1.150E+02) max ut: (2.544E+10, 0.717, 1.150E+02)] in all TMs
+01:22:28 UNet L 18,  M 1,  SU 1  Min En: (2.544E+10, 0.717, 1.150E+02) in all SUs and TMs
+01:22:28 UNet L 18,  M 1,  SU 1  Max Ut: (2.544E+10, 0.717, 1.150E+02) in all SUs and TMs
+01:22:28 UNet L 19 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+01:22:29 UNet L 19 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+01:22:29 UNet L 19 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:22:29 UNet L 19 , M 1 / 1 , SU 1 / 2  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+01:22:36 UNet L 19 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 7 sec | [min en: (1.242E+10, 0.677, 1.150E+02) max ut: (1.242E+10, 0.861, 1.150E+02)] in all TMs
+01:22:36 UNet L 19 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:22:36 UNet L 19 , M 1 / 1 , SU 2 / 2  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+01:22:43 UNet L 19 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 7 sec | [min en: (1.242E+10, 0.677, 1.150E+02) max ut: (1.242E+10, 0.861, 1.150E+02)] in all TMs
+01:22:43 UNet L 19,  M 1,  SU 1  Min En: (1.242E+10, 0.677, 1.150E+02) in all SUs and TMs
+01:22:43 UNet L 19,  M 1,  SU 1  Max Ut: (1.242E+10, 0.861, 1.150E+02) in all SUs and TMs
+01:22:43 UNet L 20 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+01:22:43 UNet L 20 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+01:22:43 UNet L 20 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:22:43 UNet L 20 , M 1 / 1 , SU 1 / 2  CM  started | Launching 8 threads, each consisting of 5,040 orderings
+01:22:56 UNet L 20 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 12 sec | [min en: (2.205E+10, 0.828, 1.150E+02) max ut: (2.205E+10, 0.942, 1.150E+02)] in all TMs
+01:22:56 UNet L 20 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:22:56 UNet L 20 , M 1 / 1 , SU 2 / 2  CM  started | Launching 8 threads, each consisting of 5,040 orderings
+01:23:09 UNet L 20 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 12 sec | [min en: (2.205E+10, 0.828, 1.150E+02) max ut: (2.205E+10, 0.942, 1.150E+02)] in all TMs
+01:23:09 UNet L 20,  M 1,  SU 1  Min En: (2.205E+10, 0.828, 1.150E+02) in all SUs and TMs
+01:23:09 UNet L 20,  M 1,  SU 1  Max Ut: (2.205E+10, 0.942, 1.150E+02) in all SUs and TMs
+01:23:09 UNet L 21 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+01:23:09 UNet L 21 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+01:23:09 UNet L 21 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:23:09 UNet L 21 , M 1 / 1 , SU 1 / 2  CM  started | Launching 8 threads, each consisting of 5,040 orderings
+01:23:21 UNet L 21 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 12 sec | [min en: (2.456E+10, 0.919, 1.150E+02) max ut: (2.456E+10, 0.933, 1.150E+02)] in all TMs
+01:23:21 UNet L 21 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:23:21 UNet L 21 , M 1 / 1 , SU 2 / 2  CM  started | Launching 8 threads, each consisting of 5,040 orderings
+01:23:33 UNet L 21 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 12 sec | [min en: (2.456E+10, 0.919, 1.150E+02) max ut: (2.456E+10, 0.933, 1.150E+02)] in all TMs
+01:23:34 UNet L 21,  M 1,  SU 1  Min En: (2.456E+10, 0.919, 1.150E+02) in all SUs and TMs
+01:23:34 UNet L 21,  M 1,  SU 1  Max Ut: (2.456E+10, 0.933, 1.150E+02) in all SUs and TMs
+01:23:34 UNet L 22 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+01:23:34 UNet L 22 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+01:23:34 UNet L 22 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:23:34 UNet L 22 , M 1 / 1 , SU 1 / 2  CM  started | Launching 8 threads, each consisting of 5,040 orderings
+01:23:46 UNet L 22 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 12 sec | [min en: (1.216E+10, 0.896, 1.150E+02) max ut: (1.216E+10, 0.923, 1.150E+02)] in all TMs
+01:23:46 UNet L 22 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:23:46 UNet L 22 , M 1 / 1 , SU 2 / 2  CM  started | Launching 8 threads, each consisting of 5,040 orderings
+01:23:59 UNet L 22 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 12 sec | [min en: (1.216E+10, 0.896, 1.150E+02) max ut: (1.216E+10, 0.923, 1.150E+02)] in all TMs
+01:23:59 UNet L 22,  M 1,  SU 1  Min En: (1.216E+10, 0.896, 1.150E+02) in all SUs and TMs
+01:23:59 UNet L 22,  M 1,  SU 1  Max Ut: (1.216E+10, 0.923, 1.150E+02) in all SUs and TMs
+01:23:59 UNet L 23 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+01:23:59 UNet L 23 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+01:23:59 UNet L 23 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+01:23:59 UNet L 23 , M 1 / 1 , SU 1 / 2  CM  started | Launching 8 threads, each consisting of 1,260 orderings
+01:24:02 UNet L 23 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 2 sec | [min en: (4.229E+07, 0.099, 1.150E+02) max ut: (4.229E+07, 0.100, 1.150E+02)] in all TMs
+01:24:02 UNet L 23 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+01:24:02 UNet L 23 , M 1 / 1 , SU 2 / 2  CM  started | Launching 8 threads, each consisting of 1,260 orderings
+01:24:04 UNet L 23 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 2 sec | [min en: (4.229E+07, 0.099, 1.150E+02) max ut: (4.229E+07, 0.100, 1.150E+02)] in all TMs
+01:24:05 UNet L 23,  M 1,  SU 2  Min En: (4.229E+07, 0.099, 1.150E+02) in all SUs and TMs
+01:24:05 UNet L 23,  M 1,  SU 1  Max Ut: (4.229E+07, 0.100, 1.150E+02) in all SUs and TMs
+ZigZag finished running. Total elapsed time: 320 seconds.
+Results are saved to ./_results/Edge_hda_28_32_12_16_UNet.
+

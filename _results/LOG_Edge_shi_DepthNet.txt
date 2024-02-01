@@ -1,0 +1,280 @@
+
+ZigZag started running.
+Target workload: DepthNet | Layer(s): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
+MEM HIERARCHY  1 / 1
+memory size: {'W': [512, 33554432, 34359738368], 'I': [512, 33554432, 34359738368], 'O': [512, 33554432, 34359738368]}
+memory unroll: unfixed
+memory share: {0: [('W', 2), ('I', 2), ('O', 2)], 1: [('W', 1), ('I', 1), ('O', 1)]}
+04:14:16 DepthNet L 1 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1024, 'O': 1024}
+spatial_loop 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+04:14:16 DepthNet L 1 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+04:14:16 DepthNet L 1 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 6,720
+04:14:16 DepthNet L 1 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 448 orderings
+04:14:18 DepthNet L 1 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 2 sec | [min en: (1.896E+08, 0.643, 1.220E+02) max ut: (1.896E+08, 1.000, 1.220E+02)] in all TMs
+04:14:18 DepthNet L 1,  M 1,  SU 1  Min En: (1.896E+08, 0.643, 1.220E+02) in all SUs and TMs
+04:14:18 DepthNet L 1,  M 1,  SU 1  Max Ut: (1.896E+08, 1.000, 1.220E+02) in all SUs and TMs
+04:14:18 DepthNet L 2 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1024, 'O': 1024}
+spatial_loop 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+04:14:18 DepthNet L 2 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+04:14:18 DepthNet L 2 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+04:14:18 DepthNet L 2 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+04:14:31 DepthNet L 2 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 12 sec | [min en: (4.044E+09, 0.975, 1.220E+02) max ut: (4.044E+09, 1.000, 1.220E+02)] in all TMs
+04:14:32 DepthNet L 2,  M 1,  SU 1  Min En: (4.044E+09, 0.975, 1.220E+02) in all SUs and TMs
+04:14:32 DepthNet L 2,  M 1,  SU 1  Max Ut: (4.044E+09, 1.000, 1.220E+02) in all SUs and TMs
+04:14:32 DepthNet L 3 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1024, 'O': 1024}
+spatial_loop 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+04:14:32 DepthNet L 3 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+04:14:32 DepthNet L 3 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+04:14:32 DepthNet L 3 , M 1 / 1 , SU 1 / 1  CM  started | Launching 8 threads, each consisting of 1,260 orderings
+04:14:36 DepthNet L 3 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 4 sec | [min en: (2.036E+09, 0.686, 1.220E+02) max ut: (2.036E+09, 0.686, 1.220E+02)] in all TMs
+04:14:36 DepthNet L 3,  M 1,  SU 1  Min En: (2.036E+09, 0.686, 1.220E+02) in all SUs and TMs
+04:14:36 DepthNet L 3,  M 1,  SU 1  Max Ut: (2.036E+09, 0.686, 1.220E+02) in all SUs and TMs
+04:14:36 DepthNet L 4 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1024, 'O': 1024}
+spatial_loop 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+04:14:36 DepthNet L 4 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+04:14:36 DepthNet L 4 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+04:14:36 DepthNet L 4 , M 1 / 1 , SU 1 / 1  CM  started | Launching 8 threads, each consisting of 1,260 orderings
+04:14:41 DepthNet L 4 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 5 sec | [min en: (4.072E+09, 0.157, 1.220E+02) max ut: (4.073E+09, 0.422, 1.220E+02)] in all TMs
+04:14:42 DepthNet L 4,  M 1,  SU 1  Min En: (4.072E+09, 0.157, 1.220E+02) in all SUs and TMs
+04:14:42 DepthNet L 4,  M 1,  SU 1  Max Ut: (4.073E+09, 0.422, 1.220E+02) in all SUs and TMs
+04:14:42 DepthNet L 5 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1024, 'O': 1024}
+spatial_loop 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+04:14:42 DepthNet L 5 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+04:14:42 DepthNet L 5 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+04:14:42 DepthNet L 5 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 1,344 orderings
+04:14:48 DepthNet L 5 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 5 sec | [min en: (2.036E+09, 0.757, 1.220E+02) max ut: (2.036E+09, 0.766, 1.220E+02)] in all TMs
+04:14:48 DepthNet L 5,  M 1,  SU 1  Min En: (2.036E+09, 0.757, 1.220E+02) in all SUs and TMs
+04:14:48 DepthNet L 5,  M 1,  SU 1  Max Ut: (2.036E+09, 0.766, 1.220E+02) in all SUs and TMs
+04:14:48 DepthNet L 6 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1024, 'O': 1024}
+spatial_loop 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+04:14:48 DepthNet L 6 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+04:14:48 DepthNet L 6 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+04:14:48 DepthNet L 6 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 672 orderings
+04:14:51 DepthNet L 6 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 3 sec | [min en: (4.072E+09, 0.761, 1.220E+02) max ut: (4.072E+09, 0.766, 1.220E+02)] in all TMs
+04:14:52 DepthNet L 6,  M 1,  SU 1  Min En: (4.072E+09, 0.761, 1.220E+02) in all SUs and TMs
+04:14:52 DepthNet L 6,  M 1,  SU 1  Max Ut: (4.072E+09, 0.766, 1.220E+02) in all SUs and TMs
+04:14:52 DepthNet L 7 is a duplicate of L 6 . Skipping exploration.
+04:14:52 DepthNet L 8 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1024, 'O': 1024}
+spatial_loop 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+04:14:52 DepthNet L 8 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+04:14:52 DepthNet L 8 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+04:14:52 DepthNet L 8 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 1,344 orderings
+04:14:57 DepthNet L 8 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 5 sec | [min en: (2.036E+09, 0.761, 1.220E+02) max ut: (2.036E+09, 0.766, 1.220E+02)] in all TMs
+04:14:57 DepthNet L 8,  M 1,  SU 1  Min En: (2.036E+09, 0.761, 1.220E+02) in all SUs and TMs
+04:14:57 DepthNet L 8,  M 1,  SU 1  Max Ut: (2.036E+09, 0.766, 1.220E+02) in all SUs and TMs
+04:14:57 DepthNet L 9 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1024, 'O': 1024}
+spatial_loop 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+04:14:57 DepthNet L 9 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+04:14:57 DepthNet L 9 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+04:14:57 DepthNet L 9 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+04:15:06 DepthNet L 9 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 8 sec | [min en: (4.072E+09, 0.763, 1.220E+02) max ut: (4.072E+09, 0.766, 1.220E+02)] in all TMs
+04:15:06 DepthNet L 9,  M 1,  SU 1  Min En: (4.072E+09, 0.763, 1.220E+02) in all SUs and TMs
+04:15:06 DepthNet L 9,  M 1,  SU 1  Max Ut: (4.072E+09, 0.766, 1.220E+02) in all SUs and TMs
+04:15:06 DepthNet L 10 is a duplicate of L 9 . Skipping exploration.
+04:15:06 DepthNet L 11 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1024, 'O': 1024}
+spatial_loop 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+04:15:06 DepthNet L 11 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+04:15:06 DepthNet L 11 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+04:15:06 DepthNet L 11 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+04:15:15 DepthNet L 11 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 8 sec | [min en: (1.109E+09, 0.191, 1.280E+02) max ut: (1.109E+09, 0.191, 1.280E+02)] in all TMs
+04:15:15 DepthNet L 11,  M 1,  SU 1  Min En: (1.109E+09, 0.191, 1.280E+02) in all SUs and TMs
+04:15:15 DepthNet L 11,  M 1,  SU 1  Max Ut: (1.109E+09, 0.191, 1.280E+02) in all SUs and TMs
+04:15:15 DepthNet L 12 is a duplicate of L 11 . Skipping exploration.
+04:15:15 DepthNet L 13 is a duplicate of L 11 . Skipping exploration.
+04:15:15 DepthNet L 14 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1024, 'O': 1024}
+spatial_loop 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+04:15:15 DepthNet L 14 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+04:15:15 DepthNet L 14 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+04:15:15 DepthNet L 14 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+04:15:28 DepthNet L 14 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 12 sec | [min en: (5.616E+09, 1.000, 1.220E+02) max ut: (5.616E+09, 1.000, 1.220E+02)] in all TMs
+04:15:28 DepthNet L 14,  M 1,  SU 1  Min En: (5.616E+09, 1.000, 1.220E+02) in all SUs and TMs
+04:15:28 DepthNet L 14,  M 1,  SU 1  Max Ut: (5.616E+09, 1.000, 1.220E+02) in all SUs and TMs
+04:15:28 DepthNet L 15 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1024, 'O': 1024}
+spatial_loop 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+04:15:28 DepthNet L 15 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+04:15:28 DepthNet L 15 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+04:15:28 DepthNet L 15 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+04:15:40 DepthNet L 15 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 12 sec | [min en: (5.616E+09, 0.982, 1.220E+02) max ut: (5.616E+09, 1.000, 1.220E+02)] in all TMs
+04:15:41 DepthNet L 15,  M 1,  SU 1  Min En: (5.616E+09, 0.982, 1.220E+02) in all SUs and TMs
+04:15:41 DepthNet L 15,  M 1,  SU 1  Max Ut: (5.616E+09, 1.000, 1.220E+02) in all SUs and TMs
+04:15:41 DepthNet L 16 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1024, 'O': 1024}
+spatial_loop 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+04:15:41 DepthNet L 16 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+04:15:41 DepthNet L 16 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+04:15:41 DepthNet L 16 , M 1 / 1 , SU 1 / 1  CM  started | Launching 8 threads, each consisting of 1,260 orderings
+04:15:45 DepthNet L 16 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 4 sec | [min en: (5.655E+09, 0.762, 1.220E+02) max ut: (5.656E+09, 0.766, 1.220E+02)] in all TMs
+04:15:45 DepthNet L 16,  M 1,  SU 1  Min En: (5.655E+09, 0.762, 1.220E+02) in all SUs and TMs
+04:15:45 DepthNet L 16,  M 1,  SU 1  Max Ut: (5.656E+09, 0.766, 1.220E+02) in all SUs and TMs
+04:15:46 DepthNet L 17 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1024, 'O': 1024}
+spatial_loop 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+04:15:46 DepthNet L 17 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+04:15:46 DepthNet L 17 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+04:15:46 DepthNet L 17 , M 1 / 1 , SU 1 / 1  CM  started | Launching 8 threads, each consisting of 1,260 orderings
+04:15:50 DepthNet L 17 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 4 sec | [min en: (5.656E+09, 0.685, 1.220E+02) max ut: (5.656E+09, 0.766, 1.220E+02)] in all TMs
+04:15:51 DepthNet L 17,  M 1,  SU 1  Min En: (5.656E+09, 0.685, 1.220E+02) in all SUs and TMs
+04:15:51 DepthNet L 17,  M 1,  SU 1  Max Ut: (5.656E+09, 0.766, 1.220E+02) in all SUs and TMs
+04:15:51 DepthNet L 18 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1024, 'O': 1024}
+spatial_loop 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+04:15:51 DepthNet L 18 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+04:15:51 DepthNet L 18 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+04:15:51 DepthNet L 18 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 1,344 orderings
+04:15:57 DepthNet L 18 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 5 sec | [min en: (2.036E+09, 0.761, 1.220E+02) max ut: (2.036E+09, 0.766, 1.220E+02)] in all TMs
+04:15:57 DepthNet L 18,  M 1,  SU 1  Min En: (2.036E+09, 0.761, 1.220E+02) in all SUs and TMs
+04:15:57 DepthNet L 18,  M 1,  SU 1  Max Ut: (2.036E+09, 0.766, 1.220E+02) in all SUs and TMs
+04:15:57 DepthNet L 19 is a duplicate of L 5 . Skipping exploration.
+04:15:57 DepthNet L 20 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1024, 'O': 1024}
+spatial_loop 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+04:15:57 DepthNet L 20 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+04:15:57 DepthNet L 20 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+04:15:57 DepthNet L 20 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 1,344 orderings
+04:16:02 DepthNet L 20 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 4 sec | [min en: (2.036E+09, 0.763, 1.220E+02) max ut: (2.036E+09, 0.766, 1.220E+02)] in all TMs
+04:16:02 DepthNet L 20,  M 1,  SU 1  Min En: (2.036E+09, 0.763, 1.220E+02) in all SUs and TMs
+04:16:02 DepthNet L 20,  M 1,  SU 1  Max Ut: (2.036E+09, 0.766, 1.220E+02) in all SUs and TMs
+04:16:02 DepthNet L 21 is a duplicate of L 8 . Skipping exploration.
+04:16:02 DepthNet L 22 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1024, 'O': 1024}
+spatial_loop 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+04:16:02 DepthNet L 22 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+04:16:02 DepthNet L 22 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+04:16:02 DepthNet L 22 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 1,344 orderings
+04:16:07 DepthNet L 22 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 4 sec | [min en: (5.543E+08, 0.191, 1.280E+02) max ut: (5.543E+08, 0.191, 1.280E+02)] in all TMs
+04:16:07 DepthNet L 22,  M 1,  SU 1  Min En: (5.543E+08, 0.191, 1.280E+02) in all SUs and TMs
+04:16:07 DepthNet L 22,  M 1,  SU 1  Max Ut: (5.543E+08, 0.191, 1.280E+02) in all SUs and TMs
+04:16:07 DepthNet L 23 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1024, 'O': 1024}
+spatial_loop 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+04:16:07 DepthNet L 23 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+04:16:07 DepthNet L 23 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+04:16:07 DepthNet L 23 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 1,344 orderings
+04:16:12 DepthNet L 23 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 4 sec | [min en: (5.543E+08, 0.190, 1.280E+02) max ut: (5.543E+08, 0.191, 1.280E+02)] in all TMs
+04:16:13 DepthNet L 23,  M 1,  SU 1  Min En: (5.543E+08, 0.190, 1.280E+02) in all SUs and TMs
+04:16:13 DepthNet L 23,  M 1,  SU 1  Max Ut: (5.543E+08, 0.191, 1.280E+02) in all SUs and TMs
+04:16:13 DepthNet L 24 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1024, 'O': 1024}
+spatial_loop 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+04:16:13 DepthNet L 24 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+04:16:13 DepthNet L 24 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+04:16:13 DepthNet L 24 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 672 orderings
+04:16:15 DepthNet L 24 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 2 sec | [min en: (4.072E+09, 0.764, 1.220E+02) max ut: (4.072E+09, 0.766, 1.220E+02)] in all TMs
+04:16:16 DepthNet L 24,  M 1,  SU 1  Min En: (4.072E+09, 0.764, 1.220E+02) in all SUs and TMs
+04:16:16 DepthNet L 24,  M 1,  SU 1  Max Ut: (4.072E+09, 0.766, 1.220E+02) in all SUs and TMs
+04:16:16 DepthNet L 25 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1024, 'O': 1024}
+spatial_loop 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+04:16:16 DepthNet L 25 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+04:16:16 DepthNet L 25 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+04:16:16 DepthNet L 25 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+04:16:28 DepthNet L 25 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 11 sec | [min en: (4.072E+09, 0.763, 1.220E+02) max ut: (4.072E+09, 0.766, 1.220E+02)] in all TMs
+04:16:28 DepthNet L 25,  M 1,  SU 1  Min En: (4.072E+09, 0.763, 1.220E+02) in all SUs and TMs
+04:16:28 DepthNet L 25,  M 1,  SU 1  Max Ut: (4.072E+09, 0.766, 1.220E+02) in all SUs and TMs
+04:16:28 DepthNet L 26 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1024, 'O': 1024}
+spatial_loop 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+04:16:28 DepthNet L 26 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+04:16:28 DepthNet L 26 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+04:16:28 DepthNet L 26 , M 1 / 1 , SU 1 / 1  CM  started | Launching 8 threads, each consisting of 1,260 orderings
+04:16:33 DepthNet L 26 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 4 sec | [min en: (1.131E+10, 0.764, 1.220E+02) max ut: (1.131E+10, 0.766, 1.220E+02)] in all TMs
+04:16:33 DepthNet L 26,  M 1,  SU 1  Min En: (1.131E+10, 0.764, 1.220E+02) in all SUs and TMs
+04:16:33 DepthNet L 26,  M 1,  SU 1  Max Ut: (1.131E+10, 0.766, 1.220E+02) in all SUs and TMs
+04:16:33 DepthNet L 27 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1024, 'O': 1024}
+spatial_loop 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+04:16:33 DepthNet L 27 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+04:16:33 DepthNet L 27 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+04:16:33 DepthNet L 27 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+04:16:47 DepthNet L 27 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 13 sec | [min en: (1.123E+10, 1.000, 1.220E+02) max ut: (1.123E+10, 1.000, 1.220E+02)] in all TMs
+04:16:47 DepthNet L 27,  M 1,  SU 1  Min En: (1.123E+10, 1.000, 1.220E+02) in all SUs and TMs
+04:16:47 DepthNet L 27,  M 1,  SU 1  Max Ut: (1.123E+10, 1.000, 1.220E+02) in all SUs and TMs
+04:16:47 DepthNet L 28 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1024, 'O': 1024}
+spatial_loop 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+04:16:47 DepthNet L 28 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 32], [4, 32]], [], [], []], 'I': [[], [[3, 32], [4, 32]], [], []], 'O': [[], [[3, 32], [4, 32]], [], []]}
+04:16:47 DepthNet L 28 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 6,720
+04:16:47 DepthNet L 28 , M 1 / 1 , SU 1 / 1  CM  started | Launching 8 threads, each consisting of 840 orderings
+04:16:51 DepthNet L 28 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 3 sec | [min en: (5.265E+08, 0.404, 1.220E+02) max ut: (5.266E+08, 0.591, 1.220E+02)] in all TMs
+04:16:52 DepthNet L 28,  M 1,  SU 1  Min En: (5.265E+08, 0.404, 1.220E+02) in all SUs and TMs
+04:16:52 DepthNet L 28,  M 1,  SU 1  Max Ut: (5.266E+08, 0.591, 1.220E+02) in all SUs and TMs
+ZigZag finished running. Total elapsed time: 170 seconds.
+Results are saved to ./_results/Edge_shi_DepthNet.
+

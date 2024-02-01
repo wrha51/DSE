@@ -1,0 +1,499 @@
+Grouped convolution detected for SSDMobileNetV1 Layer 2. Terminal prints will show total energy of all groups combined.
+Grouped convolution detected for SSDMobileNetV1 Layer 4. Terminal prints will show total energy of all groups combined.
+Grouped convolution detected for SSDMobileNetV1 Layer 6. Terminal prints will show total energy of all groups combined.
+Grouped convolution detected for SSDMobileNetV1 Layer 8. Terminal prints will show total energy of all groups combined.
+Grouped convolution detected for SSDMobileNetV1 Layer 10. Terminal prints will show total energy of all groups combined.
+Grouped convolution detected for SSDMobileNetV1 Layer 12. Terminal prints will show total energy of all groups combined.
+Grouped convolution detected for SSDMobileNetV1 Layer 14. Terminal prints will show total energy of all groups combined.
+Grouped convolution detected for SSDMobileNetV1 Layer 16. Terminal prints will show total energy of all groups combined.
+Grouped convolution detected for SSDMobileNetV1 Layer 18. Terminal prints will show total energy of all groups combined.
+Grouped convolution detected for SSDMobileNetV1 Layer 20. Terminal prints will show total energy of all groups combined.
+Grouped convolution detected for SSDMobileNetV1 Layer 22. Terminal prints will show total energy of all groups combined.
+Grouped convolution detected for SSDMobileNetV1 Layer 24. Terminal prints will show total energy of all groups combined.
+Grouped convolution detected for SSDMobileNetV1 Layer 26. Terminal prints will show total energy of all groups combined.
+
+ZigZag started running.
+Target workload: SSDMobileNetV1 | Layer(s): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47]
+MEM HIERARCHY  1 / 1
+memory size: {'W': [512, 33554432, 34359738368], 'I': [512, 33554432, 34359738368], 'O': [512, 33554432, 34359738368]}
+memory unroll: unfixed
+memory share: {0: [('W', 1), ('I', 1), ('O', 1)], 1: [('W', 2), ('I', 2), ('O', 2)]}
+22:09:00 SSDMobileNetV1 L 1 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 3481, 'O': 900}
+spatial_loop 1 {'W': [[[3, 30], [4, 30]], [], [], []], 'I': [[], [[3, 30], [4, 30]], [], []], 'O': [[], [[3, 30], [4, 30]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:00 SSDMobileNetV1 L 1 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 30], [4, 30]], [], [], []], 'I': [[], [[3, 30], [4, 30]], [], []], 'O': [[], [[3, 30], [4, 30]], [], []]}
+22:09:00 SSDMobileNetV1 L 1 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+22:09:00 SSDMobileNetV1 L 1 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 1,344 orderings
+22:09:04 SSDMobileNetV1 L 1 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 3 sec | [min en: (4.264E+07, 0.879, 1.220E+02) max ut: (4.264E+07, 0.879, 1.220E+02)] in all TMs
+22:09:04 SSDMobileNetV1 L 1,  M 1,  SU 1  Min En: (4.264E+07, 0.879, 1.220E+02) in all SUs and TMs
+22:09:04 SSDMobileNetV1 L 1,  M 1,  SU 1  Max Ut: (4.264E+07, 0.879, 1.220E+02) in all SUs and TMs
+22:09:04 SSDMobileNetV1 L 2 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 900, 'O': 900}
+spatial_loop 1 {'W': [[[3, 30], [4, 30]], [], [], []], 'I': [[], [[3, 30], [4, 30]], [], []], 'O': [[], [[3, 30], [4, 30]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:04 SSDMobileNetV1 L 2 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 30], [4, 30]], [], [], []], 'I': [[], [[3, 30], [4, 30]], [], []], 'O': [[], [[3, 30], [4, 30]], [], []]}
+22:09:04 SSDMobileNetV1 L 2 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 24
+22:09:04 SSDMobileNetV1 L 2 , M 1 / 1 , SU 1 / 1  CM  started | Launching 4 threads, each consisting of 6 orderings
+22:09:04 SSDMobileNetV1 L 2 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (1.422E+07, 0.562, 1.220E+02) max ut: (1.422E+07, 0.562, 1.220E+02)] in all TMs
+22:09:04 SSDMobileNetV1 L 2,  M 1,  SU 1  Min En: (1.422E+07, 0.562, 1.220E+02) in all SUs and TMs
+22:09:04 SSDMobileNetV1 L 2,  M 1,  SU 1  Max Ut: (1.422E+07, 0.562, 1.220E+02) in all SUs and TMs
+22:09:04 SSDMobileNetV1 L 3 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 900, 'O': 900}
+spatial_loop 1 {'W': [[[3, 30], [4, 30]], [], [], []], 'I': [[], [[3, 30], [4, 30]], [], []], 'O': [[], [[3, 30], [4, 30]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:04 SSDMobileNetV1 L 3 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 30], [4, 30]], [], [], []], 'I': [[], [[3, 30], [4, 30]], [], []], 'O': [[], [[3, 30], [4, 30]], [], []]}
+22:09:04 SSDMobileNetV1 L 3 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 3,360
+22:09:04 SSDMobileNetV1 L 3 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 224 orderings
+22:09:05 SSDMobileNetV1 L 3 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (1.011E+08, 0.624, 1.220E+02) max ut: (1.011E+08, 0.879, 1.220E+02)] in all TMs
+22:09:05 SSDMobileNetV1 L 3,  M 1,  SU 1  Min En: (1.011E+08, 0.624, 1.220E+02) in all SUs and TMs
+22:09:05 SSDMobileNetV1 L 3,  M 1,  SU 1  Max Ut: (1.011E+08, 0.879, 1.220E+02) in all SUs and TMs
+22:09:05 SSDMobileNetV1 L 4 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 2401, 'O': 625}
+spatial_loop 1 {'W': [[[3, 25], [4, 25]], [], [], []], 'I': [[], [[3, 25], [4, 25]], [], []], 'O': [[], [[3, 25], [4, 25]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:05 SSDMobileNetV1 L 4 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 25], [4, 25]], [], [], []], 'I': [[], [[3, 25], [4, 25]], [], []], 'O': [[], [[3, 25], [4, 25]], [], []]}
+22:09:05 SSDMobileNetV1 L 4 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 24
+22:09:05 SSDMobileNetV1 L 4 , M 1 / 1 , SU 1 / 1  CM  started | Launching 4 threads, each consisting of 6 orderings
+22:09:05 SSDMobileNetV1 L 4 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (7.202E+06, 0.562, 1.220E+02) max ut: (7.202E+06, 0.562, 1.220E+02)] in all TMs
+22:09:06 SSDMobileNetV1 L 4,  M 1,  SU 1  Min En: (7.202E+06, 0.562, 1.220E+02) in all SUs and TMs
+22:09:06 SSDMobileNetV1 L 4,  M 1,  SU 1  Max Ut: (7.202E+06, 0.562, 1.220E+02) in all SUs and TMs
+22:09:06 SSDMobileNetV1 L 5 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 625, 'O': 625}
+spatial_loop 1 {'W': [[[3, 25], [4, 25]], [], [], []], 'I': [[], [[3, 25], [4, 25]], [], []], 'O': [[], [[3, 25], [4, 25]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:06 SSDMobileNetV1 L 5 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 25], [4, 25]], [], [], []], 'I': [[], [[3, 25], [4, 25]], [], []], 'O': [[], [[3, 25], [4, 25]], [], []]}
+22:09:06 SSDMobileNetV1 L 5 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 3,360
+22:09:06 SSDMobileNetV1 L 5 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 224 orderings
+22:09:06 SSDMobileNetV1 L 5 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (1.022E+08, 0.610, 1.220E+02) max ut: (1.022E+08, 0.610, 1.220E+02)] in all TMs
+22:09:07 SSDMobileNetV1 L 5,  M 1,  SU 1  Min En: (1.022E+08, 0.610, 1.220E+02) in all SUs and TMs
+22:09:07 SSDMobileNetV1 L 5,  M 1,  SU 1  Max Ut: (1.022E+08, 0.610, 1.220E+02) in all SUs and TMs
+22:09:07 SSDMobileNetV1 L 6 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 625, 'O': 625}
+spatial_loop 1 {'W': [[[3, 25], [4, 25]], [], [], []], 'I': [[], [[3, 25], [4, 25]], [], []], 'O': [[], [[3, 25], [4, 25]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:07 SSDMobileNetV1 L 6 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 25], [4, 25]], [], [], []], 'I': [[], [[3, 25], [4, 25]], [], []], 'O': [[], [[3, 25], [4, 25]], [], []]}
+22:09:07 SSDMobileNetV1 L 6 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 24
+22:09:07 SSDMobileNetV1 L 6 , M 1 / 1 , SU 1 / 1  CM  started | Launching 4 threads, each consisting of 6 orderings
+22:09:07 SSDMobileNetV1 L 6 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (1.439E+07, 0.562, 1.220E+02) max ut: (1.439E+07, 0.562, 1.220E+02)] in all TMs
+22:09:07 SSDMobileNetV1 L 6,  M 1,  SU 1  Min En: (1.439E+07, 0.562, 1.220E+02) in all SUs and TMs
+22:09:07 SSDMobileNetV1 L 6,  M 1,  SU 1  Max Ut: (1.439E+07, 0.562, 1.220E+02) in all SUs and TMs
+22:09:07 SSDMobileNetV1 L 7 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 625, 'O': 625}
+spatial_loop 1 {'W': [[[3, 25], [4, 25]], [], [], []], 'I': [[], [[3, 25], [4, 25]], [], []], 'O': [[], [[3, 25], [4, 25]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:07 SSDMobileNetV1 L 7 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 25], [4, 25]], [], [], []], 'I': [[], [[3, 25], [4, 25]], [], []], 'O': [[], [[3, 25], [4, 25]], [], []]}
+22:09:07 SSDMobileNetV1 L 7 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+22:09:07 SSDMobileNetV1 L 7 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 672 orderings
+22:09:09 SSDMobileNetV1 L 7 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 1 sec | [min en: (2.044E+08, 0.610, 1.220E+02) max ut: (2.044E+08, 0.610, 1.220E+02)] in all TMs
+22:09:09 SSDMobileNetV1 L 7,  M 1,  SU 1  Min En: (2.044E+08, 0.610, 1.220E+02) in all SUs and TMs
+22:09:09 SSDMobileNetV1 L 7,  M 1,  SU 1  Max Ut: (2.044E+08, 0.610, 1.220E+02) in all SUs and TMs
+22:09:09 SSDMobileNetV1 L 8 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1369, 'O': 361}
+spatial_loop 1 {'W': [[[3, 19], [4, 19]], [], [], []], 'I': [[], [[3, 19], [4, 19]], [], []], 'O': [[], [[3, 19], [4, 19]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:09 SSDMobileNetV1 L 8 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 19], [4, 19]], [], [], []], 'I': [[], [[3, 19], [4, 19]], [], []], 'O': [[], [[3, 19], [4, 19]], [], []]}
+22:09:09 SSDMobileNetV1 L 8 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 24
+22:09:09 SSDMobileNetV1 L 8 , M 1 / 1 , SU 1 / 1  CM  started | Launching 4 threads, each consisting of 6 orderings
+22:09:09 SSDMobileNetV1 L 8 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (3.797E+06, 0.353, 1.220E+02) max ut: (3.797E+06, 0.353, 1.220E+02)] in all TMs
+22:09:09 SSDMobileNetV1 L 8,  M 1,  SU 1  Min En: (3.797E+06, 0.353, 1.220E+02) in all SUs and TMs
+22:09:09 SSDMobileNetV1 L 8,  M 1,  SU 1  Max Ut: (3.797E+06, 0.353, 1.220E+02) in all SUs and TMs
+22:09:10 SSDMobileNetV1 L 9 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 361, 'O': 361}
+spatial_loop 1 {'W': [[[3, 19], [4, 19]], [], [], []], 'I': [[], [[3, 19], [4, 19]], [], []], 'O': [[], [[3, 19], [4, 19]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:10 SSDMobileNetV1 L 9 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 19], [4, 19]], [], [], []], 'I': [[], [[3, 19], [4, 19]], [], []], 'O': [[], [[3, 19], [4, 19]], [], []]}
+22:09:10 SSDMobileNetV1 L 9 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+22:09:10 SSDMobileNetV1 L 9 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 672 orderings
+22:09:11 SSDMobileNetV1 L 9 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 1 sec | [min en: (1.078E+08, 0.340, 1.220E+02) max ut: (1.078E+08, 0.353, 1.220E+02)] in all TMs
+22:09:12 SSDMobileNetV1 L 9,  M 1,  SU 1  Min En: (1.078E+08, 0.340, 1.220E+02) in all SUs and TMs
+22:09:12 SSDMobileNetV1 L 9,  M 1,  SU 1  Max Ut: (1.078E+08, 0.353, 1.220E+02) in all SUs and TMs
+22:09:12 SSDMobileNetV1 L 10 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 361, 'O': 361}
+spatial_loop 1 {'W': [[[3, 19], [4, 19]], [], [], []], 'I': [[], [[3, 19], [4, 19]], [], []], 'O': [[], [[3, 19], [4, 19]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:12 SSDMobileNetV1 L 10 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 19], [4, 19]], [], [], []], 'I': [[], [[3, 19], [4, 19]], [], []], 'O': [[], [[3, 19], [4, 19]], [], []]}
+22:09:12 SSDMobileNetV1 L 10 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 24
+22:09:12 SSDMobileNetV1 L 10 , M 1 / 1 , SU 1 / 1  CM  started | Launching 4 threads, each consisting of 6 orderings
+22:09:12 SSDMobileNetV1 L 10 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (7.585E+06, 0.353, 1.220E+02) max ut: (7.585E+06, 0.353, 1.220E+02)] in all TMs
+22:09:12 SSDMobileNetV1 L 10,  M 1,  SU 1  Min En: (7.585E+06, 0.353, 1.220E+02) in all SUs and TMs
+22:09:12 SSDMobileNetV1 L 10,  M 1,  SU 1  Max Ut: (7.585E+06, 0.353, 1.220E+02) in all SUs and TMs
+22:09:12 SSDMobileNetV1 L 11 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 361, 'O': 361}
+spatial_loop 1 {'W': [[[3, 19], [4, 19]], [], [], []], 'I': [[], [[3, 19], [4, 19]], [], []], 'O': [[], [[3, 19], [4, 19]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:12 SSDMobileNetV1 L 11 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 19], [4, 19]], [], [], []], 'I': [[], [[3, 19], [4, 19]], [], []], 'O': [[], [[3, 19], [4, 19]], [], []]}
+22:09:12 SSDMobileNetV1 L 11 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+22:09:12 SSDMobileNetV1 L 11 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 672 orderings
+22:09:14 SSDMobileNetV1 L 11 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 1 sec | [min en: (2.156E+08, 0.346, 1.220E+02) max ut: (2.156E+08, 0.353, 1.220E+02)] in all TMs
+22:09:14 SSDMobileNetV1 L 11,  M 1,  SU 1  Min En: (2.156E+08, 0.346, 1.220E+02) in all SUs and TMs
+22:09:14 SSDMobileNetV1 L 11,  M 1,  SU 1  Max Ut: (2.156E+08, 0.353, 1.220E+02) in all SUs and TMs
+22:09:14 SSDMobileNetV1 L 12 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1369, 'O': 361}
+spatial_loop 1 {'W': [[[3, 19], [4, 19]], [], [], []], 'I': [[], [[3, 19], [4, 19]], [], []], 'O': [[], [[3, 19], [4, 19]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:14 SSDMobileNetV1 L 12 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 19], [4, 19]], [], [], []], 'I': [[], [[3, 19], [4, 19]], [], []], 'O': [[], [[3, 19], [4, 19]], [], []]}
+22:09:14 SSDMobileNetV1 L 12 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 2
+22:09:14 SSDMobileNetV1 L 12 , M 1 / 1 , SU 1 / 1  CM  started | Launching 2 threads, each consisting of 1 orderings
+22:09:14 SSDMobileNetV1 L 12 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (1.899E+06, 0.353, 1.220E+02) max ut: (1.899E+06, 0.353, 1.220E+02)] in all TMs
+22:09:14 SSDMobileNetV1 L 12,  M 1,  SU 1  Min En: (1.899E+06, 0.353, 1.220E+02) in all SUs and TMs
+22:09:14 SSDMobileNetV1 L 12,  M 1,  SU 1  Max Ut: (1.899E+06, 0.353, 1.220E+02) in all SUs and TMs
+22:09:14 SSDMobileNetV1 L 13 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 361, 'O': 361}
+spatial_loop 1 {'W': [[[3, 19], [4, 19]], [], [], []], 'I': [[], [[3, 19], [4, 19]], [], []], 'O': [[], [[3, 19], [4, 19]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:14 SSDMobileNetV1 L 13 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 19], [4, 19]], [], [], []], 'I': [[], [[3, 19], [4, 19]], [], []], 'O': [[], [[3, 19], [4, 19]], [], []]}
+22:09:14 SSDMobileNetV1 L 13 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 280
+22:09:14 SSDMobileNetV1 L 13 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 18 orderings
+22:09:14 SSDMobileNetV1 L 13 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (1.078E+08, 0.346, 1.220E+02) max ut: (1.078E+08, 0.353, 1.220E+02)] in all TMs
+22:09:15 SSDMobileNetV1 L 13,  M 1,  SU 1  Min En: (1.078E+08, 0.346, 1.220E+02) in all SUs and TMs
+22:09:15 SSDMobileNetV1 L 13,  M 1,  SU 1  Max Ut: (1.078E+08, 0.353, 1.220E+02) in all SUs and TMs
+22:09:15 SSDMobileNetV1 L 14 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 361, 'O': 361}
+spatial_loop 1 {'W': [[[3, 19], [4, 19]], [], [], []], 'I': [[], [[3, 19], [4, 19]], [], []], 'O': [[], [[3, 19], [4, 19]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:15 SSDMobileNetV1 L 14 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 19], [4, 19]], [], [], []], 'I': [[], [[3, 19], [4, 19]], [], []], 'O': [[], [[3, 19], [4, 19]], [], []]}
+22:09:15 SSDMobileNetV1 L 14 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 2
+22:09:15 SSDMobileNetV1 L 14 , M 1 / 1 , SU 1 / 1  CM  started | Launching 2 threads, each consisting of 1 orderings
+22:09:15 SSDMobileNetV1 L 14 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (3.793E+06, 0.353, 1.220E+02) max ut: (3.793E+06, 0.353, 1.220E+02)] in all TMs
+22:09:15 SSDMobileNetV1 L 14,  M 1,  SU 1  Min En: (3.793E+06, 0.353, 1.220E+02) in all SUs and TMs
+22:09:15 SSDMobileNetV1 L 14,  M 1,  SU 1  Max Ut: (3.793E+06, 0.353, 1.220E+02) in all SUs and TMs
+22:09:15 SSDMobileNetV1 L 15 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 361, 'O': 361}
+spatial_loop 1 {'W': [[[3, 19], [4, 19]], [], [], []], 'I': [[], [[3, 19], [4, 19]], [], []], 'O': [[], [[3, 19], [4, 19]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:15 SSDMobileNetV1 L 15 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 19], [4, 19]], [], [], []], 'I': [[], [[3, 19], [4, 19]], [], []], 'O': [[], [[3, 19], [4, 19]], [], []]}
+22:09:15 SSDMobileNetV1 L 15 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 1,120
+22:09:15 SSDMobileNetV1 L 15 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 74 orderings
+22:09:15 SSDMobileNetV1 L 15 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (2.156E+08, 0.349, 1.220E+02) max ut: (2.156E+08, 0.353, 1.220E+02)] in all TMs
+22:09:16 SSDMobileNetV1 L 15,  M 1,  SU 1  Min En: (2.156E+08, 0.349, 1.220E+02) in all SUs and TMs
+22:09:16 SSDMobileNetV1 L 15,  M 1,  SU 1  Max Ut: (2.156E+08, 0.353, 1.220E+02) in all SUs and TMs
+22:09:16 SSDMobileNetV1 L 16 is a duplicate of L 14 . Skipping exploration.
+22:09:16 SSDMobileNetV1 L 17 is a duplicate of L 15 . Skipping exploration.
+22:09:16 SSDMobileNetV1 L 18 is a duplicate of L 14 . Skipping exploration.
+22:09:16 SSDMobileNetV1 L 19 is a duplicate of L 15 . Skipping exploration.
+22:09:16 SSDMobileNetV1 L 20 is a duplicate of L 14 . Skipping exploration.
+22:09:16 SSDMobileNetV1 L 21 is a duplicate of L 15 . Skipping exploration.
+22:09:16 SSDMobileNetV1 L 22 is a duplicate of L 14 . Skipping exploration.
+22:09:16 SSDMobileNetV1 L 23 is a duplicate of L 15 . Skipping exploration.
+22:09:16 SSDMobileNetV1 L 24 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 361, 'O': 100}
+spatial_loop 1 {'W': [[[3, 10], [4, 10]], [], [], []], 'I': [[], [[3, 10], [4, 10]], [], []], 'O': [[], [[3, 10], [4, 10]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:16 SSDMobileNetV1 L 24 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 10], [4, 10]], [], [], []], 'I': [[], [[3, 10], [4, 10]], [], []], 'O': [[], [[3, 10], [4, 10]], [], []]}
+22:09:16 SSDMobileNetV1 L 24 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 2
+22:09:16 SSDMobileNetV1 L 24 , M 1 / 1 , SU 1 / 1  CM  started | Launching 2 threads, each consisting of 1 orderings
+22:09:16 SSDMobileNetV1 L 24 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (1.223E+06, 0.098, 1.220E+02) max ut: (1.223E+06, 0.098, 1.220E+02)] in all TMs
+22:09:16 SSDMobileNetV1 L 24,  M 1,  SU 1  Min En: (1.223E+06, 0.098, 1.220E+02) in all SUs and TMs
+22:09:16 SSDMobileNetV1 L 24,  M 1,  SU 1  Max Ut: (1.223E+06, 0.098, 1.220E+02) in all SUs and TMs
+22:09:16 SSDMobileNetV1 L 25 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 100, 'O': 100}
+spatial_loop 1 {'W': [[[3, 10], [4, 10]], [], [], []], 'I': [[], [[3, 10], [4, 10]], [], []], 'O': [[], [[3, 10], [4, 10]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:16 SSDMobileNetV1 L 25 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 10], [4, 10]], [], [], []], 'I': [[], [[3, 10], [4, 10]], [], []], 'O': [[], [[3, 10], [4, 10]], [], []]}
+22:09:16 SSDMobileNetV1 L 25 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 1,120
+22:09:16 SSDMobileNetV1 L 25 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 74 orderings
+22:09:16 SSDMobileNetV1 L 25 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (1.388E+08, 0.098, 1.220E+02) max ut: (1.388E+08, 0.098, 1.220E+02)] in all TMs
+22:09:16 SSDMobileNetV1 L 25,  M 1,  SU 1  Min En: (1.388E+08, 0.098, 1.220E+02) in all SUs and TMs
+22:09:16 SSDMobileNetV1 L 25,  M 1,  SU 1  Max Ut: (1.388E+08, 0.098, 1.220E+02) in all SUs and TMs
+22:09:17 SSDMobileNetV1 L 26 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 100, 'O': 100}
+spatial_loop 1 {'W': [[[3, 10], [4, 10]], [], [], []], 'I': [[], [[3, 10], [4, 10]], [], []], 'O': [[], [[3, 10], [4, 10]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:17 SSDMobileNetV1 L 26 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 10], [4, 10]], [], [], []], 'I': [[], [[3, 10], [4, 10]], [], []], 'O': [[], [[3, 10], [4, 10]], [], []]}
+22:09:17 SSDMobileNetV1 L 26 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 2
+22:09:17 SSDMobileNetV1 L 26 , M 1 / 1 , SU 1 / 1  CM  started | Launching 2 threads, each consisting of 1 orderings
+22:09:17 SSDMobileNetV1 L 26 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (2.443E+06, 0.098, 1.220E+02) max ut: (2.443E+06, 0.098, 1.220E+02)] in all TMs
+22:09:17 SSDMobileNetV1 L 26,  M 1,  SU 1  Min En: (2.443E+06, 0.098, 1.220E+02) in all SUs and TMs
+22:09:17 SSDMobileNetV1 L 26,  M 1,  SU 1  Max Ut: (2.443E+06, 0.098, 1.220E+02) in all SUs and TMs
+22:09:17 SSDMobileNetV1 L 27 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 100, 'O': 100}
+spatial_loop 1 {'W': [[[3, 10], [4, 10]], [], [], []], 'I': [[], [[3, 10], [4, 10]], [], []], 'O': [[], [[3, 10], [4, 10]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:17 SSDMobileNetV1 L 27 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 10], [4, 10]], [], [], []], 'I': [[], [[3, 10], [4, 10]], [], []], 'O': [[], [[3, 10], [4, 10]], [], []]}
+22:09:17 SSDMobileNetV1 L 27 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 1,120
+22:09:17 SSDMobileNetV1 L 27 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 74 orderings
+22:09:17 SSDMobileNetV1 L 27 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (2.777E+08, 0.098, 1.220E+02) max ut: (2.777E+08, 0.098, 1.220E+02)] in all TMs
+22:09:17 SSDMobileNetV1 L 27,  M 1,  SU 1  Min En: (2.777E+08, 0.098, 1.220E+02) in all SUs and TMs
+22:09:17 SSDMobileNetV1 L 27,  M 1,  SU 1  Max Ut: (2.777E+08, 0.098, 1.220E+02) in all SUs and TMs
+22:09:17 SSDMobileNetV1 L 28 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 100, 'O': 100}
+spatial_loop 1 {'W': [[[3, 10], [4, 10]], [], [], []], 'I': [[], [[3, 10], [4, 10]], [], []], 'O': [[], [[3, 10], [4, 10]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:17 SSDMobileNetV1 L 28 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 10], [4, 10]], [], [], []], 'I': [[], [[3, 10], [4, 10]], [], []], 'O': [[], [[3, 10], [4, 10]], [], []]}
+22:09:17 SSDMobileNetV1 L 28 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 280
+22:09:17 SSDMobileNetV1 L 28 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 18 orderings
+22:09:18 SSDMobileNetV1 L 28 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (6.942E+07, 0.098, 1.220E+02) max ut: (6.942E+07, 0.098, 1.220E+02)] in all TMs
+22:09:18 SSDMobileNetV1 L 28,  M 1,  SU 1  Min En: (6.942E+07, 0.098, 1.220E+02) in all SUs and TMs
+22:09:18 SSDMobileNetV1 L 28,  M 1,  SU 1  Max Ut: (6.942E+07, 0.098, 1.220E+02) in all SUs and TMs
+22:09:18 SSDMobileNetV1 L 29 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 81, 'O': 25}
+spatial_loop 1 {'W': [[[3, 5], [4, 5]], [], [], []], 'I': [[], [[3, 5], [4, 5]], [], []], 'O': [[], [[3, 5], [4, 5]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:18 SSDMobileNetV1 L 29 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 5], [4, 5]], [], [], []], 'I': [[], [[3, 5], [4, 5]], [], []], 'O': [[], [[3, 5], [4, 5]], [], []]}
+22:09:18 SSDMobileNetV1 L 29 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+22:09:18 SSDMobileNetV1 L 29 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 1,344 orderings
+22:09:21 SSDMobileNetV1 L 29 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 3 sec | [min en: (1.234E+08, 0.024, 1.220E+02) max ut: (1.234E+08, 0.024, 1.220E+02)] in all TMs
+22:09:21 SSDMobileNetV1 L 29,  M 1,  SU 1  Min En: (1.234E+08, 0.024, 1.220E+02) in all SUs and TMs
+22:09:21 SSDMobileNetV1 L 29,  M 1,  SU 1  Max Ut: (1.234E+08, 0.024, 1.220E+02) in all SUs and TMs
+22:09:21 SSDMobileNetV1 L 30 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 25, 'O': 25}
+spatial_loop 1 {'W': [[[3, 5], [4, 5]], [], [], []], 'I': [[], [[3, 5], [4, 5]], [], []], 'O': [[], [[3, 5], [4, 5]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:21 SSDMobileNetV1 L 30 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 5], [4, 5]], [], [], []], 'I': [[], [[3, 5], [4, 5]], [], []], 'O': [[], [[3, 5], [4, 5]], [], []]}
+22:09:21 SSDMobileNetV1 L 30 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 1,120
+22:09:21 SSDMobileNetV1 L 30 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 74 orderings
+22:09:22 SSDMobileNetV1 L 30 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (6.856E+06, 0.024, 1.220E+02) max ut: (6.856E+06, 0.024, 1.220E+02)] in all TMs
+22:09:22 SSDMobileNetV1 L 30,  M 1,  SU 1  Min En: (6.856E+06, 0.024, 1.220E+02) in all SUs and TMs
+22:09:22 SSDMobileNetV1 L 30,  M 1,  SU 1  Max Ut: (6.856E+06, 0.024, 1.220E+02) in all SUs and TMs
+22:09:22 SSDMobileNetV1 L 31 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 25, 'O': 9}
+spatial_loop 1 {'W': [[[3, 3], [4, 3]], [], [], []], 'I': [[], [[3, 3], [4, 3]], [], []], 'O': [[], [[3, 3], [4, 3]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:22 SSDMobileNetV1 L 31 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 3], [4, 3]], [], [], []], 'I': [[], [[3, 3], [4, 3]], [], []], 'O': [[], [[3, 3], [4, 3]], [], []]}
+22:09:22 SSDMobileNetV1 L 31 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+22:09:22 SSDMobileNetV1 L 31 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 672 orderings
+22:09:24 SSDMobileNetV1 L 31 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 1 sec | [min en: (2.077E+07, 0.009, 1.220E+02) max ut: (2.077E+07, 0.009, 1.220E+02)] in all TMs
+22:09:24 SSDMobileNetV1 L 31,  M 1,  SU 1  Min En: (2.077E+07, 0.009, 1.220E+02) in all SUs and TMs
+22:09:24 SSDMobileNetV1 L 31,  M 1,  SU 1  Max Ut: (2.077E+07, 0.009, 1.220E+02) in all SUs and TMs
+22:09:24 SSDMobileNetV1 L 32 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 9, 'O': 9}
+spatial_loop 1 {'W': [[[3, 3], [4, 3]], [], [], []], 'I': [[], [[3, 3], [4, 3]], [], []], 'O': [[], [[3, 3], [4, 3]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:24 SSDMobileNetV1 L 32 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 3], [4, 3]], [], [], []], 'I': [[], [[3, 3], [4, 3]], [], []], 'O': [[], [[3, 3], [4, 3]], [], []]}
+22:09:24 SSDMobileNetV1 L 32 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 280
+22:09:24 SSDMobileNetV1 L 32 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 18 orderings
+22:09:24 SSDMobileNetV1 L 32 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (2.308E+06, 0.009, 1.220E+02) max ut: (2.308E+06, 0.009, 1.220E+02)] in all TMs
+22:09:24 SSDMobileNetV1 L 32,  M 1,  SU 1  Min En: (2.308E+06, 0.009, 1.220E+02) in all SUs and TMs
+22:09:24 SSDMobileNetV1 L 32,  M 1,  SU 1  Max Ut: (2.308E+06, 0.009, 1.220E+02) in all SUs and TMs
+22:09:24 SSDMobileNetV1 L 33 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 9, 'O': 4}
+spatial_loop 1 {'W': [[[3, 2], [4, 2]], [], [], []], 'I': [[], [[3, 2], [4, 2]], [], []], 'O': [[], [[3, 2], [4, 2]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:24 SSDMobileNetV1 L 33 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 2], [4, 2]], [], [], []], 'I': [[], [[3, 2], [4, 2]], [], []], 'O': [[], [[3, 2], [4, 2]], [], []]}
+22:09:24 SSDMobileNetV1 L 33 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 10,080
+22:09:24 SSDMobileNetV1 L 33 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 672 orderings
+22:09:26 SSDMobileNetV1 L 33 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 1 sec | [min en: (1.762E+07, 0.004, 1.220E+02) max ut: (1.762E+07, 0.004, 1.220E+02)] in all TMs
+22:09:26 SSDMobileNetV1 L 33,  M 1,  SU 1  Min En: (1.762E+07, 0.004, 1.220E+02) in all SUs and TMs
+22:09:26 SSDMobileNetV1 L 33,  M 1,  SU 1  Max Ut: (1.762E+07, 0.004, 1.220E+02) in all SUs and TMs
+22:09:26 SSDMobileNetV1 L 34 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 4, 'O': 4}
+spatial_loop 1 {'W': [[[3, 2], [4, 2]], [], [], []], 'I': [[], [[3, 2], [4, 2]], [], []], 'O': [[], [[3, 2], [4, 2]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:26 SSDMobileNetV1 L 34 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 2], [4, 2]], [], [], []], 'I': [[], [[3, 2], [4, 2]], [], []], 'O': [[], [[3, 2], [4, 2]], [], []]}
+22:09:26 SSDMobileNetV1 L 34 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 420
+22:09:26 SSDMobileNetV1 L 34 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 28 orderings
+22:09:27 SSDMobileNetV1 L 34 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (9.790E+05, 0.004, 1.220E+02) max ut: (9.790E+05, 0.004, 1.220E+02)] in all TMs
+22:09:27 SSDMobileNetV1 L 34,  M 1,  SU 1  Min En: (9.790E+05, 0.004, 1.220E+02) in all SUs and TMs
+22:09:27 SSDMobileNetV1 L 34,  M 1,  SU 1  Max Ut: (9.790E+05, 0.004, 1.220E+02) in all SUs and TMs
+22:09:27 SSDMobileNetV1 L 35 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1, 'O': 1}
+spatial_loop 1 {'W': [[[3, 1], [4, 1]], [], [], []], 'I': [[], [[3, 1], [4, 1]], [], []], 'O': [[], [[3, 1], [4, 1]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:27 SSDMobileNetV1 L 35 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 1], [4, 1]], [], [], []], 'I': [[], [[3, 1], [4, 1]], [], []], 'O': [[], [[3, 1], [4, 1]], [], []]}
+22:09:27 SSDMobileNetV1 L 35 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 3,360
+22:09:27 SSDMobileNetV1 L 35 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 224 orderings
+22:09:27 SSDMobileNetV1 L 35 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (3.933E+06, 0.001, 1.200E+02) max ut: (3.933E+06, 0.001, 1.200E+02)] in all TMs
+22:09:28 SSDMobileNetV1 L 35,  M 1,  SU 1  Min En: (3.933E+06, 0.001, 1.200E+02) in all SUs and TMs
+22:09:28 SSDMobileNetV1 L 35,  M 1,  SU 1  Max Ut: (3.933E+06, 0.001, 1.200E+02) in all SUs and TMs
+22:09:28 SSDMobileNetV1 L 36 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 361, 'O': 361}
+spatial_loop 1 {'W': [[[3, 19], [4, 19]], [], [], []], 'I': [[], [[3, 19], [4, 19]], [], []], 'O': [[], [[3, 19], [4, 19]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:28 SSDMobileNetV1 L 36 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 19], [4, 19]], [], [], []], 'I': [[], [[3, 19], [4, 19]], [], []], 'O': [[], [[3, 19], [4, 19]], [], []]}
+22:09:28 SSDMobileNetV1 L 36 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 1,680
+22:09:28 SSDMobileNetV1 L 36 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 112 orderings
+22:09:28 SSDMobileNetV1 L 36 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (1.149E+08, 0.349, 1.220E+02) max ut: (1.149E+08, 0.353, 1.220E+02)] in all TMs
+22:09:29 SSDMobileNetV1 L 36,  M 1,  SU 1  Min En: (1.149E+08, 0.349, 1.220E+02) in all SUs and TMs
+22:09:29 SSDMobileNetV1 L 36,  M 1,  SU 1  Max Ut: (1.149E+08, 0.353, 1.220E+02) in all SUs and TMs
+22:09:29 SSDMobileNetV1 L 37 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 361, 'O': 361}
+spatial_loop 1 {'W': [[[3, 19], [4, 19]], [], [], []], 'I': [[], [[3, 19], [4, 19]], [], []], 'O': [[], [[3, 19], [4, 19]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:29 SSDMobileNetV1 L 37 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 19], [4, 19]], [], [], []], 'I': [[], [[3, 19], [4, 19]], [], []], 'O': [[], [[3, 19], [4, 19]], [], []]}
+22:09:29 SSDMobileNetV1 L 37 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 840
+22:09:29 SSDMobileNetV1 L 37 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 56 orderings
+22:09:29 SSDMobileNetV1 L 37 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (5.054E+06, 0.353, 1.220E+02) max ut: (5.054E+06, 0.353, 1.220E+02)] in all TMs
+22:09:29 SSDMobileNetV1 L 37,  M 1,  SU 1  Min En: (5.054E+06, 0.353, 1.220E+02) in all SUs and TMs
+22:09:29 SSDMobileNetV1 L 37,  M 1,  SU 1  Max Ut: (5.054E+06, 0.353, 1.220E+02) in all SUs and TMs
+22:09:29 SSDMobileNetV1 L 38 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 100, 'O': 100}
+spatial_loop 1 {'W': [[[3, 10], [4, 10]], [], [], []], 'I': [[], [[3, 10], [4, 10]], [], []], 'O': [[], [[3, 10], [4, 10]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:29 SSDMobileNetV1 L 38 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 10], [4, 10]], [], [], []], 'I': [[], [[3, 10], [4, 10]], [], []], 'O': [[], [[3, 10], [4, 10]], [], []]}
+22:09:29 SSDMobileNetV1 L 38 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 6,720
+22:09:29 SSDMobileNetV1 L 38 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 448 orderings
+22:09:30 SSDMobileNetV1 L 38 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (1.481E+08, 0.098, 1.220E+02) max ut: (1.481E+08, 0.098, 1.220E+02)] in all TMs
+22:09:30 SSDMobileNetV1 L 38,  M 1,  SU 1  Min En: (1.481E+08, 0.098, 1.220E+02) in all SUs and TMs
+22:09:30 SSDMobileNetV1 L 38,  M 1,  SU 1  Max Ut: (1.481E+08, 0.098, 1.220E+02) in all SUs and TMs
+22:09:30 SSDMobileNetV1 L 39 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 100, 'O': 100}
+spatial_loop 1 {'W': [[[3, 10], [4, 10]], [], [], []], 'I': [[], [[3, 10], [4, 10]], [], []], 'O': [[], [[3, 10], [4, 10]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:30 SSDMobileNetV1 L 39 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 10], [4, 10]], [], [], []], 'I': [[], [[3, 10], [4, 10]], [], []], 'O': [[], [[3, 10], [4, 10]], [], []]}
+22:09:30 SSDMobileNetV1 L 39 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 1,120
+22:09:30 SSDMobileNetV1 L 39 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 74 orderings
+22:09:31 SSDMobileNetV1 L 39 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (6.509E+06, 0.098, 1.220E+02) max ut: (6.509E+06, 0.098, 1.220E+02)] in all TMs
+22:09:31 SSDMobileNetV1 L 39,  M 1,  SU 1  Min En: (6.509E+06, 0.098, 1.220E+02) in all SUs and TMs
+22:09:31 SSDMobileNetV1 L 39,  M 1,  SU 1  Max Ut: (6.509E+06, 0.098, 1.220E+02) in all SUs and TMs
+22:09:31 SSDMobileNetV1 L 40 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 25, 'O': 25}
+spatial_loop 1 {'W': [[[3, 5], [4, 5]], [], [], []], 'I': [[], [[3, 5], [4, 5]], [], []], 'O': [[], [[3, 5], [4, 5]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:31 SSDMobileNetV1 L 40 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 5], [4, 5]], [], [], []], 'I': [[], [[3, 5], [4, 5]], [], []], 'O': [[], [[3, 5], [4, 5]], [], []]}
+22:09:31 SSDMobileNetV1 L 40 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 6,720
+22:09:31 SSDMobileNetV1 L 40 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 448 orderings
+22:09:32 SSDMobileNetV1 L 40 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (2.924E+07, 0.024, 1.220E+02) max ut: (2.924E+07, 0.024, 1.220E+02)] in all TMs
+22:09:32 SSDMobileNetV1 L 40,  M 1,  SU 1  Min En: (2.924E+07, 0.024, 1.220E+02) in all SUs and TMs
+22:09:32 SSDMobileNetV1 L 40,  M 1,  SU 1  Max Ut: (2.924E+07, 0.024, 1.220E+02) in all SUs and TMs
+22:09:32 SSDMobileNetV1 L 41 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 25, 'O': 25}
+spatial_loop 1 {'W': [[[3, 5], [4, 5]], [], [], []], 'I': [[], [[3, 5], [4, 5]], [], []], 'O': [[], [[3, 5], [4, 5]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:32 SSDMobileNetV1 L 41 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 5], [4, 5]], [], [], []], 'I': [[], [[3, 5], [4, 5]], [], []], 'O': [[], [[3, 5], [4, 5]], [], []]}
+22:09:32 SSDMobileNetV1 L 41 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 1,120
+22:09:32 SSDMobileNetV1 L 41 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 74 orderings
+22:09:32 SSDMobileNetV1 L 41 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (1.286E+06, 0.024, 1.220E+02) max ut: (1.286E+06, 0.024, 1.220E+02)] in all TMs
+22:09:33 SSDMobileNetV1 L 41,  M 1,  SU 1  Min En: (1.286E+06, 0.024, 1.220E+02) in all SUs and TMs
+22:09:33 SSDMobileNetV1 L 41,  M 1,  SU 1  Max Ut: (1.286E+06, 0.024, 1.220E+02) in all SUs and TMs
+22:09:33 SSDMobileNetV1 L 42 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 9, 'O': 9}
+spatial_loop 1 {'W': [[[3, 3], [4, 3]], [], [], []], 'I': [[], [[3, 3], [4, 3]], [], []], 'O': [[], [[3, 3], [4, 3]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:33 SSDMobileNetV1 L 42 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 3], [4, 3]], [], [], []], 'I': [[], [[3, 3], [4, 3]], [], []], 'O': [[], [[3, 3], [4, 3]], [], []]}
+22:09:33 SSDMobileNetV1 L 42 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 1,680
+22:09:33 SSDMobileNetV1 L 42 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 112 orderings
+22:09:33 SSDMobileNetV1 L 42 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (9.845E+06, 0.009, 1.220E+02) max ut: (9.845E+06, 0.009, 1.220E+02)] in all TMs
+22:09:33 SSDMobileNetV1 L 42,  M 1,  SU 1  Min En: (9.845E+06, 0.009, 1.220E+02) in all SUs and TMs
+22:09:33 SSDMobileNetV1 L 42,  M 1,  SU 1  Max Ut: (9.845E+06, 0.009, 1.220E+02) in all SUs and TMs
+22:09:33 SSDMobileNetV1 L 43 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 9, 'O': 9}
+spatial_loop 1 {'W': [[[3, 3], [4, 3]], [], [], []], 'I': [[], [[3, 3], [4, 3]], [], []], 'O': [[], [[3, 3], [4, 3]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:33 SSDMobileNetV1 L 43 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 3], [4, 3]], [], [], []], 'I': [[], [[3, 3], [4, 3]], [], []], 'O': [[], [[3, 3], [4, 3]], [], []]}
+22:09:33 SSDMobileNetV1 L 43 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 280
+22:09:33 SSDMobileNetV1 L 43 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 18 orderings
+22:09:33 SSDMobileNetV1 L 43 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (4.328E+05, 0.009, 1.220E+02) max ut: (4.328E+05, 0.009, 1.220E+02)] in all TMs
+22:09:34 SSDMobileNetV1 L 43,  M 1,  SU 1  Min En: (4.328E+05, 0.009, 1.220E+02) in all SUs and TMs
+22:09:34 SSDMobileNetV1 L 43,  M 1,  SU 1  Max Ut: (4.328E+05, 0.009, 1.220E+02) in all SUs and TMs
+22:09:34 SSDMobileNetV1 L 44 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 4, 'O': 4}
+spatial_loop 1 {'W': [[[3, 2], [4, 2]], [], [], []], 'I': [[], [[3, 2], [4, 2]], [], []], 'O': [[], [[3, 2], [4, 2]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:34 SSDMobileNetV1 L 44 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 2], [4, 2]], [], [], []], 'I': [[], [[3, 2], [4, 2]], [], []], 'O': [[], [[3, 2], [4, 2]], [], []]}
+22:09:34 SSDMobileNetV1 L 44 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 1,680
+22:09:34 SSDMobileNetV1 L 44 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 112 orderings
+22:09:34 SSDMobileNetV1 L 44 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (8.352E+06, 0.004, 1.220E+02) max ut: (8.352E+06, 0.004, 1.220E+02)] in all TMs
+22:09:34 SSDMobileNetV1 L 44,  M 1,  SU 1  Min En: (8.352E+06, 0.004, 1.220E+02) in all SUs and TMs
+22:09:34 SSDMobileNetV1 L 44,  M 1,  SU 1  Max Ut: (8.352E+06, 0.004, 1.220E+02) in all SUs and TMs
+22:09:34 SSDMobileNetV1 L 45 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 4, 'O': 4}
+spatial_loop 1 {'W': [[[3, 2], [4, 2]], [], [], []], 'I': [[], [[3, 2], [4, 2]], [], []], 'O': [[], [[3, 2], [4, 2]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:34 SSDMobileNetV1 L 45 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 2], [4, 2]], [], [], []], 'I': [[], [[3, 2], [4, 2]], [], []], 'O': [[], [[3, 2], [4, 2]], [], []]}
+22:09:34 SSDMobileNetV1 L 45 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 280
+22:09:34 SSDMobileNetV1 L 45 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 18 orderings
+22:09:34 SSDMobileNetV1 L 45 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (3.671E+05, 0.004, 1.220E+02) max ut: (3.671E+05, 0.004, 1.220E+02)] in all TMs
+22:09:35 SSDMobileNetV1 L 45,  M 1,  SU 1  Min En: (3.671E+05, 0.004, 1.220E+02) in all SUs and TMs
+22:09:35 SSDMobileNetV1 L 45,  M 1,  SU 1  Max Ut: (3.671E+05, 0.004, 1.220E+02) in all SUs and TMs
+22:09:35 SSDMobileNetV1 L 46 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1, 'O': 1}
+spatial_loop 1 {'W': [[[3, 1], [4, 1]], [], [], []], 'I': [[], [[3, 1], [4, 1]], [], []], 'O': [[], [[3, 1], [4, 1]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:35 SSDMobileNetV1 L 46 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 1], [4, 1]], [], [], []], 'I': [[], [[3, 1], [4, 1]], [], []], 'O': [[], [[3, 1], [4, 1]], [], []]}
+22:09:35 SSDMobileNetV1 L 46 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 6,720
+22:09:35 SSDMobileNetV1 L 46 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 448 orderings
+22:09:35 SSDMobileNetV1 L 46 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (3.728E+06, 0.001, 1.200E+02) max ut: (3.728E+06, 0.001, 1.200E+02)] in all TMs
+22:09:36 SSDMobileNetV1 L 46,  M 1,  SU 1  Min En: (3.728E+06, 0.001, 1.200E+02) in all SUs and TMs
+22:09:36 SSDMobileNetV1 L 46,  M 1,  SU 1  Max Ut: (3.728E+06, 0.001, 1.200E+02) in all SUs and TMs
+22:09:36 SSDMobileNetV1 L 47 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1, 'O': 1}
+spatial_loop 1 {'W': [[[3, 1], [4, 1]], [], [], []], 'I': [[], [[3, 1], [4, 1]], [], []], 'O': [[], [[3, 1], [4, 1]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+22:09:36 SSDMobileNetV1 L 47 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[3, 1], [4, 1]], [], [], []], 'I': [[], [[3, 1], [4, 1]], [], []], 'O': [[], [[3, 1], [4, 1]], [], []]}
+22:09:36 SSDMobileNetV1 L 47 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 1,120
+22:09:36 SSDMobileNetV1 L 47 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 74 orderings
+22:09:36 SSDMobileNetV1 L 47 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (1.639E+05, 0.001, 1.200E+02) max ut: (1.639E+05, 0.001, 1.200E+02)] in all TMs
+22:09:36 SSDMobileNetV1 L 47,  M 1,  SU 1  Min En: (1.639E+05, 0.001, 1.200E+02) in all SUs and TMs
+22:09:36 SSDMobileNetV1 L 47,  M 1,  SU 1  Max Ut: (1.639E+05, 0.001, 1.200E+02) in all SUs and TMs
+ZigZag finished running. Total elapsed time: 52 seconds.
+Results are saved to ./_results/Edge_shi_SSDMobileNetV1_hint.
+

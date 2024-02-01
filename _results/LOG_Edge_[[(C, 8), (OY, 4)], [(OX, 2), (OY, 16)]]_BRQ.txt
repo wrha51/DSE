@@ -1,0 +1,90 @@
+
+ZigZag started running.
+Target workload: BRQ | Layer(s): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
+MEM HIERARCHY  1 / 1
+memory size: {'W': [512, 33554432, 34359738368], 'I': [512, 33554432, 34359738368], 'O': [512, 33554432, 34359738368]}
+memory unroll: unfixed
+memory share: {0: [('W', 2), ('I', 2), ('O', 2)], 1: [('W', 1), ('I', 1), ('O', 1)]}
+01:29:30 BRQ L 1 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 1024, 'O': 1024}
+spatial_loop 1 {'W': [[[4, 32], [3, 8], [4, 4]], [[5, 1]], [], []], 'I': [[], [[5, 1], [4, 32], [3, 8], [4, 4]], [], []], 'O': [[[5, 1]], [[4, 32], [3, 8], [4, 4]], [], []]}
+flooring 1 {'W': [[[4], [3, 4]], [[5], []], [], []], 'I': [[], [[5, 4], [3, 4]], [], []], 'O': [[[5], []], [[4], [3, 4]], [], []]}
+
+01:29:30 BRQ L 1 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[4, 32], [3, 8], [4, 4]], [[5, 1]], [], []], 'I': [[], [[5, 1], [4, 32], [3, 8], [4, 4]], [], []], 'O': [[[5, 1]], [[4, 32], [3, 8], [4, 4]], [], []]}
+01:29:30 BRQ L 1 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:29:30 BRQ L 1 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+01:29:33 BRQ L 1 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 3 sec | [min en: (4.644E+07, 0.375, 1.220E+02) max ut: (4.644E+07, 0.562, 1.220E+02)] in all TMs
+01:29:33 BRQ L 1,  M 1,  SU 1  Min En: (4.644E+07, 0.375, 1.220E+02) in all SUs and TMs
+01:29:33 BRQ L 1,  M 1,  SU 1  Max Ut: (4.644E+07, 0.562, 1.220E+02) in all SUs and TMs
+01:29:33 BRQ L 2 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 8, 'I': 1024, 'O': 128}
+spatial_loop 1 {'W': [[[4, 4], [3, 8], [4, 4]], [[5, 8]], [], []], 'I': [[], [[5, 8], [4, 4], [3, 8], [4, 4]], [], []], 'O': [[[5, 8]], [[4, 4], [3, 8], [4, 4]], [], []]}
+flooring 1 {'W': [[[4], [3, 4]], [[5], []], [], []], 'I': [[], [[5, 4], [3, 4]], [], []], 'O': [[[5], []], [[4], [3, 4]], [], []]}
+
+01:29:33 BRQ L 2 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[4, 4], [3, 8], [4, 4]], [[5, 8]], [], []], 'I': [[], [[5, 8], [4, 4], [3, 8], [4, 4]], [], []], 'O': [[[5, 8]], [[4, 4], [3, 8], [4, 4]], [], []]}
+01:29:33 BRQ L 2 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:29:33 BRQ L 2 , M 1 / 1 , SU 1 / 1  CM  started | Launching 8 threads, each consisting of 5,040 orderings
+01:29:40 BRQ L 2 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 6 sec | [min en: (1.485E+09, 0.956, 1.210E+02) max ut: (1.485E+09, 1.000, 1.210E+02)] in all TMs
+01:29:40 BRQ L 2,  M 1,  SU 1  Min En: (1.485E+09, 0.956, 1.210E+02) in all SUs and TMs
+01:29:40 BRQ L 2,  M 1,  SU 1  Max Ut: (1.485E+09, 1.000, 1.210E+02) in all SUs and TMs
+01:29:40 BRQ L 3 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 8, 'I': 1024, 'O': 128}
+spatial_loop 1 {'W': [[[4, 4], [3, 16], [4, 2]], [[5, 8]], [], []], 'I': [[], [[5, 8], [4, 4], [3, 16], [4, 2]], [], []], 'O': [[[5, 8]], [[4, 4], [3, 16], [4, 2]], [], []]}
+flooring 1 {'W': [[[4], [3, 4]], [[5], []], [], []], 'I': [[], [[5, 4], [3, 4]], [], []], 'O': [[[5], []], [[4], [3, 4]], [], []]}
+
+01:29:40 BRQ L 3 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[4, 4], [3, 16], [4, 2]], [[5, 8]], [], []], 'I': [[], [[5, 8], [4, 4], [3, 16], [4, 2]], [], []], 'O': [[[5, 8]], [[4, 4], [3, 16], [4, 2]], [], []]}
+01:29:40 BRQ L 3 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+01:29:40 BRQ L 3 , M 1 / 1 , SU 1 / 1  CM  started | Launching 8 threads, each consisting of 2,520 orderings
+01:29:43 BRQ L 3 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 3 sec | [min en: (1.485E+09, 0.971, 1.210E+02) max ut: (1.485E+09, 1.000, 1.210E+02)] in all TMs
+01:29:44 BRQ L 3,  M 1,  SU 1  Min En: (1.485E+09, 0.971, 1.210E+02) in all SUs and TMs
+01:29:44 BRQ L 3,  M 1,  SU 1  Max Ut: (1.485E+09, 1.000, 1.210E+02) in all SUs and TMs
+01:29:44 BRQ L 4 is a duplicate of L 3 . Skipping exploration.
+01:29:44 BRQ L 5 is a duplicate of L 3 . Skipping exploration.
+01:29:44 BRQ L 6 is a duplicate of L 3 . Skipping exploration.
+01:29:44 BRQ L 7 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 8, 'I': 1024, 'O': 128}
+spatial_loop 1 {'W': [[[4, 4], [3, 4], [4, 8]], [[5, 8]], [], []], 'I': [[], [[5, 8], [4, 4], [3, 4], [4, 8]], [], []], 'O': [[[5, 8]], [[4, 4], [3, 4], [4, 8]], [], []]}
+flooring 1 {'W': [[[4], [3, 4]], [[5], []], [], []], 'I': [[], [[5, 4], [3, 4]], [], []], 'O': [[[5], []], [[4], [3, 4]], [], []]}
+
+01:29:44 BRQ L 7 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[4, 4], [3, 4], [4, 8]], [[5, 8]], [], []], 'I': [[], [[5, 8], [4, 4], [3, 4], [4, 8]], [], []], 'O': [[[5, 8]], [[4, 4], [3, 4], [4, 8]], [], []]}
+01:29:44 BRQ L 7 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+01:29:44 BRQ L 7 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+01:29:48 BRQ L 7 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 3 sec | [min en: (1.485E+09, 0.997, 1.210E+02) max ut: (1.485E+09, 1.000, 1.210E+02)] in all TMs
+01:29:48 BRQ L 7,  M 1,  SU 1  Min En: (1.485E+09, 0.997, 1.210E+02) in all SUs and TMs
+01:29:48 BRQ L 7,  M 1,  SU 1  Max Ut: (1.485E+09, 1.000, 1.210E+02) in all SUs and TMs
+01:29:48 BRQ L 8 is a duplicate of L 7 . Skipping exploration.
+01:29:48 BRQ L 9 is a duplicate of L 7 . Skipping exploration.
+01:29:48 BRQ L 10 is a duplicate of L 7 . Skipping exploration.
+01:29:48 BRQ L 11 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 8, 'I': 768, 'O': 96}
+spatial_loop 1 {'W': [[[4, 4], [3, 4], [4, 6]], [[5, 8]], [], []], 'I': [[], [[5, 8], [4, 4], [3, 4], [4, 6]], [], []], 'O': [[[5, 8]], [[4, 4], [3, 4], [4, 6]], [], []]}
+flooring 1 {'W': [[[4], [3, 4]], [[5], []], [], []], 'I': [[], [[5, 4], [3, 4]], [], []], 'O': [[[5], []], [[4], [3, 4]], [], []]}
+
+01:29:48 BRQ L 11 , M 1 / 1  SUG finished | Valid SU found: 1
+-SU 1 / 1 {'W': [[[4, 4], [3, 4], [4, 6]], [[5, 8]], [], []], 'I': [[], [[5, 8], [4, 4], [3, 4], [4, 6]], [], []], 'O': [[[5, 8]], [[4, 4], [3, 4], [4, 6]], [], []]}
+01:29:48 BRQ L 11 , M 1 / 1 , SU 1 / 1  TMG Finished | Elapsed time: 0 sec | Valid TMs found 6,720
+01:29:48 BRQ L 11 , M 1 / 1 , SU 1 / 1  CM  started | Launching 15 threads, each consisting of 448 orderings
+01:29:49 BRQ L 11 , M 1 / 1 , SU 1 / 1  CM  finished | Elapsed time: 0 sec | [min en: (7.484E+08, 0.750, 1.210E+02) max ut: (7.484E+08, 0.750, 1.210E+02)] in all TMs
+01:29:49 BRQ L 11,  M 1,  SU 1  Min En: (7.484E+08, 0.750, 1.210E+02) in all SUs and TMs
+01:29:49 BRQ L 11,  M 1,  SU 1  Max Ut: (7.484E+08, 0.750, 1.210E+02) in all SUs and TMs
+01:29:49 BRQ L 12 is a duplicate of L 11 . Skipping exploration.
+01:29:49 BRQ L 13 is a duplicate of L 11 . Skipping exploration.
+01:29:49 BRQ L 14 is a duplicate of L 11 . Skipping exploration.
+01:29:49 BRQ L 15 is a duplicate of L 11 . Skipping exploration.
+01:29:49 BRQ L 16 is a duplicate of L 11 . Skipping exploration.
+01:29:49 BRQ L 17 , M 1 / 1  SUG started
+Error in distinguish_XY. Skipping current SU
+01:29:49 BRQ L 17 , M 1 / 1  SUG finished | Valid SU found: 0
+Layer 17 : no valid spatial unrolling found
+01:29:49 BRQ L 18 is a duplicate of L 17 . Skipping exploration.
+01:29:49 BRQ L 19 is a duplicate of L 17 . Skipping exploration.
+01:29:49 BRQ L 20 is a duplicate of L 17 . Skipping exploration.
+01:29:49 BRQ L 21 is a duplicate of L 17 . Skipping exploration.
+01:29:49 BRQ L 22 is a duplicate of L 17 . Skipping exploration.
+ZigZag finished running. Total elapsed time: 25 seconds.
+Results are saved to ./_results/Edge_[[(C, 8), (OY, 4)], [(OX, 2), (OY, 16)]]_BRQ.
+

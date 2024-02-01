@@ -1,0 +1,146 @@
+
+ZigZag started running.
+Target workload: BRQ | Layer(s): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
+MEM HIERARCHY  1 / 1
+memory size: {'W': [512, 25165824, 34359738368], 'I': [512, 25165824, 34359738368], 'O': [512, 25165824, 34359738368]}
+memory unroll: unfixed
+memory share: {0: [('W', 2), ('I', 2), ('O', 2)], 1: [('W', 1), ('I', 1), ('O', 1)]}
+02:32:38 BRQ L 1 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+02:32:38 BRQ L 1 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+02:32:38 BRQ L 1 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 6,720
+02:32:38 BRQ L 1 , M 1 / 1 , SU 1 / 2  CM  started | Launching 15 threads, each consisting of 448 orderings
+02:32:39 BRQ L 1 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 1 sec | [min en: (4.646E+07, 0.331, 1.150E+02) max ut: (4.646E+07, 0.472, 1.150E+02)] in all TMs
+02:32:39 BRQ L 1 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 6,720
+02:32:39 BRQ L 1 , M 1 / 1 , SU 2 / 2  CM  started | Launching 15 threads, each consisting of 448 orderings
+02:32:40 BRQ L 1 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 1 sec | [min en: (4.646E+07, 0.331, 1.150E+02) max ut: (4.646E+07, 0.472, 1.150E+02)] in all TMs
+02:32:40 BRQ L 1,  M 1,  SU 1  Min En: (4.646E+07, 0.331, 1.150E+02) in all SUs and TMs
+02:32:40 BRQ L 1,  M 1,  SU 1  Max Ut: (4.646E+07, 0.472, 1.150E+02) in all SUs and TMs
+02:32:40 BRQ L 2 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+02:32:40 BRQ L 2 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+02:32:40 BRQ L 2 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+02:32:40 BRQ L 2 , M 1 / 1 , SU 1 / 2  CM  started | Launching 8 threads, each consisting of 2,520 orderings
+02:32:46 BRQ L 2 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 5 sec | [min en: (1.491E+09, 0.754, 1.150E+02) max ut: (1.491E+09, 0.857, 1.150E+02)] in all TMs
+02:32:46 BRQ L 2 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+02:32:46 BRQ L 2 , M 1 / 1 , SU 2 / 2  CM  started | Launching 8 threads, each consisting of 2,520 orderings
+02:32:52 BRQ L 2 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 5 sec | [min en: (1.491E+09, 0.754, 1.150E+02) max ut: (1.491E+09, 0.857, 1.150E+02)] in all TMs
+02:32:52 BRQ L 2,  M 1,  SU 1  Min En: (1.491E+09, 0.754, 1.150E+02) in all SUs and TMs
+02:32:52 BRQ L 2,  M 1,  SU 1  Max Ut: (1.491E+09, 0.857, 1.150E+02) in all SUs and TMs
+02:32:52 BRQ L 3 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+02:32:52 BRQ L 3 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+02:32:52 BRQ L 3 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+02:32:52 BRQ L 3 , M 1 / 1 , SU 1 / 2  CM  started | Launching 15 threads, each consisting of 1,344 orderings
+02:32:56 BRQ L 3 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 3 sec | [min en: (1.504E+09, 0.634, 1.150E+02) max ut: (1.504E+09, 0.643, 1.150E+02)] in all TMs
+02:32:56 BRQ L 3 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+02:32:56 BRQ L 3 , M 1 / 1 , SU 2 / 2  CM  started | Launching 15 threads, each consisting of 1,344 orderings
+02:32:59 BRQ L 3 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 3 sec | [min en: (1.504E+09, 0.634, 1.150E+02) max ut: (1.504E+09, 0.643, 1.150E+02)] in all TMs
+02:33:00 BRQ L 3,  M 1,  SU 1  Min En: (1.504E+09, 0.634, 1.150E+02) in all SUs and TMs
+02:33:00 BRQ L 3,  M 1,  SU 1  Max Ut: (1.504E+09, 0.643, 1.150E+02) in all SUs and TMs
+02:33:00 BRQ L 4 is a duplicate of L 3 . Skipping exploration.
+02:33:00 BRQ L 5 is a duplicate of L 3 . Skipping exploration.
+02:33:00 BRQ L 6 is a duplicate of L 3 . Skipping exploration.
+02:33:00 BRQ L 7 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+02:33:00 BRQ L 7 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+02:33:00 BRQ L 7 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+02:33:00 BRQ L 7 , M 1 / 1 , SU 1 / 2  CM  started | Launching 15 threads, each consisting of 1,344 orderings
+02:33:03 BRQ L 7 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 2 sec | [min en: (1.504E+09, 0.638, 1.150E+02) max ut: (1.504E+09, 0.643, 1.150E+02)] in all TMs
+02:33:03 BRQ L 7 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 20,160
+02:33:03 BRQ L 7 , M 1 / 1 , SU 2 / 2  CM  started | Launching 15 threads, each consisting of 1,344 orderings
+02:33:06 BRQ L 7 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 2 sec | [min en: (1.504E+09, 0.638, 1.150E+02) max ut: (1.504E+09, 0.643, 1.150E+02)] in all TMs
+02:33:06 BRQ L 7,  M 1,  SU 1  Min En: (1.504E+09, 0.638, 1.150E+02) in all SUs and TMs
+02:33:06 BRQ L 7,  M 1,  SU 1  Max Ut: (1.504E+09, 0.643, 1.150E+02) in all SUs and TMs
+02:33:06 BRQ L 8 is a duplicate of L 7 . Skipping exploration.
+02:33:06 BRQ L 9 is a duplicate of L 7 . Skipping exploration.
+02:33:06 BRQ L 10 is a duplicate of L 7 . Skipping exploration.
+02:33:06 BRQ L 11 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+02:33:06 BRQ L 11 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+02:33:06 BRQ L 11 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+02:33:06 BRQ L 11 , M 1 / 1 , SU 1 / 2  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+02:33:12 BRQ L 11 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 5 sec | [min en: (8.314E+08, 0.160, 1.210E+02) max ut: (8.314E+08, 0.161, 1.210E+02)] in all TMs
+02:33:12 BRQ L 11 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+02:33:12 BRQ L 11 , M 1 / 1 , SU 2 / 2  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+02:33:17 BRQ L 11 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 5 sec | [min en: (8.314E+08, 0.160, 1.210E+02) max ut: (8.314E+08, 0.161, 1.210E+02)] in all TMs
+02:33:18 BRQ L 11,  M 1,  SU 1  Min En: (8.314E+08, 0.160, 1.210E+02) in all SUs and TMs
+02:33:18 BRQ L 11,  M 1,  SU 1  Max Ut: (8.314E+08, 0.161, 1.210E+02) in all SUs and TMs
+02:33:18 BRQ L 12 is a duplicate of L 11 . Skipping exploration.
+02:33:18 BRQ L 13 is a duplicate of L 11 . Skipping exploration.
+02:33:18 BRQ L 14 is a duplicate of L 11 . Skipping exploration.
+02:33:18 BRQ L 15 is a duplicate of L 11 . Skipping exploration.
+02:33:18 BRQ L 16 is a duplicate of L 11 . Skipping exploration.
+02:33:18 BRQ L 17 , M 1 / 1  SUG started
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+flooring 1 {'W': [[[3], [4]], [], [], []], 'I': [[], [[3], [4]], [], []], 'O': [[], [[3], [4]], [], []]}
+
+mem_unroll 1 {'W': 1, 'I': 896, 'O': 896}
+spatial_loop 1 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+flooring 1 {'W': [[[4], [3]], [], [], []], 'I': [[], [[4], [3]], [], []], 'O': [[], [[4], [3]], [], []]}
+
+02:33:18 BRQ L 17 , M 1 / 1  SUG finished | Valid SU found: 2
+-SU 1 / 2 {'W': [[[3, 28], [4, 32]], [], [], []], 'I': [[], [[3, 28], [4, 32]], [], []], 'O': [[], [[3, 28], [4, 32]], [], []]}
+-SU 2 / 2 {'W': [[[4, 28], [3, 32]], [], [], []], 'I': [[], [[4, 28], [3, 32]], [], []], 'O': [[], [[4, 28], [3, 32]], [], []]}
+02:33:18 BRQ L 17 , M 1 / 1 , SU 1 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+02:33:18 BRQ L 17 , M 1 / 1 , SU 1 / 2  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+02:33:25 BRQ L 17 , M 1 / 1 , SU 1 / 2  CM  finished | Elapsed time: 7 sec | [min en: (8.861E+08, 0.001, 1.228E+03) max ut: (8.863E+08, 0.001, 1.228E+03)] in all TMs
+02:33:25 BRQ L 17 , M 1 / 1 , SU 2 / 2  TMG Finished | Elapsed time: 0 sec | Valid TMs found 40,320
+02:33:25 BRQ L 17 , M 1 / 1 , SU 2 / 2  CM  started | Launching 15 threads, each consisting of 2,688 orderings
+02:33:32 BRQ L 17 , M 1 / 1 , SU 2 / 2  CM  finished | Elapsed time: 7 sec | [min en: (8.861E+08, 0.001, 1.228E+03) max ut: (8.863E+08, 0.001, 1.228E+03)] in all TMs
+02:33:32 BRQ L 17,  M 1,  SU 1  Min En: (8.861E+08, 0.001, 1.228E+03) in all SUs and TMs
+02:33:32 BRQ L 17,  M 1,  SU 1  Max Ut: (8.863E+08, 0.001, 1.228E+03) in all SUs and TMs
+02:33:32 BRQ L 18 is a duplicate of L 17 . Skipping exploration.
+02:33:32 BRQ L 19 is a duplicate of L 17 . Skipping exploration.
+02:33:32 BRQ L 20 is a duplicate of L 17 . Skipping exploration.
+02:33:32 BRQ L 21 is a duplicate of L 17 . Skipping exploration.
+02:33:32 BRQ L 22 is a duplicate of L 17 . Skipping exploration.
+ZigZag finished running. Total elapsed time: 64 seconds.
+Results are saved to ./_results/Edge_hda_28_32_12_16_BRQ.
+
